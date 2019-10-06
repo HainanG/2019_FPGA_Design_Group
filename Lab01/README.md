@@ -9,5 +9,6 @@
 
 ## Problems
 #### 1.為什麼要加入 blinky.xdc 這個 Constraint ?
-
+因為...我還真他媽不知道
 #### 2.承上題，若沒有加入這個 Constraint，可能會發生什麼事?
+clock可能會產生延遲
