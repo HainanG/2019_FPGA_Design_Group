@@ -3,10 +3,10 @@
 林柏維 E24064216、吳文歆 E24066064、陳哲彥 E24066365
 ## Program 1 - 使用板子上的 RGB LED 實現路口交通號誌
 ### 狀態圖
-<!-![Alt text](https://i.ibb.co/qDR6hDD/image.jpg)->
+<!--![Alt text](https://i.ibb.co/qDR6hDD/image.jpg)-->
 <a href="https://ibb.co/4Rgqsbx"><img src="https://i.ibb.co/jkZNVCF/lab01-4.png" alt="lab01-4" border="0"></a><br />
 ### 說明
-<!-![Alt text](https://i.ibb.co/yBNWpQj/1.png)-> 
+![Alt text](https://i.ibb.co/yBNWpQj/1.png)  
 我們在每一個state都有設一個專屬的counter ( 0 : green, 1 : yellow, 2 : red )  
 本來應該是不用那麼多，但是一開始為了方便看就設了那麼多，之後就沿用了。  
 <a href="https://ibb.co/vkz39JL/"><img src="https://i.ibb.co/QMmP06Y/LAB01-1.png" alt="LAB01-1" border="0"></a><br />
@@ -29,10 +29,10 @@ btn[2] : 加一秒
 btn[1] : 減一秒  
 ## Bonus 2
 ### 系統設計圖
-<!-![Alt text](https://i.ibb.co/7Vkd0c6/3.png)-> 
+<!--![Alt text](https://i.ibb.co/7Vkd0c6/3.png)--> 
 <a href="https://ibb.co/ryPwjtD"><img src="https://i.ibb.co/9YXrDvQ/lab01-2.png" alt="lab01-2" border="0"></a><br/>
 ### LED_RGB運作圖
-<!-![Alt text](https://i.ibb.co/xgnDdcv/2.png)->
+<!--![Alt text](https://i.ibb.co/xgnDdcv/2.png)-->
 <a href="https://ibb.co/YNV34Lc"><img src="https://i.ibb.co/grc3bRS/lab01-3.png" alt="lab01-3" border="0"></a><br/>
 ## Problems
 #### 1.為什麼要加入 blinky.xdc 這個 Constraint ?
