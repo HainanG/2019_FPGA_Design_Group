@@ -16,8 +16,6 @@
 因為一個 clk 是 0.5 秒，所以 counter 長度為 2 時是一秒，並且 counter 0 至 1 為第一秒,  2 到 3 為第二秒，依此類推。
 
 ## Bonus
-### 細節
-![Alt text](https://i.ibb.co/xgnDdcv/2.png)
 ### btn 使用說明  
 只能在設定階段用(sw = 2’d1, 2’d2, 2’d3)  
 共有 btn[1] , btn[2] , btn[3] 可使用  
@@ -27,6 +25,8 @@ btn[1] : 減一秒
 ## Bonus 2
 ### 系統設計圖
 ![Alt text](https://i.ibb.co/7Vkd0c6/3.png)
+### LED_RGB運作圖
+![Alt text](https://i.ibb.co/xgnDdcv/2.png)
 ## Problems
 #### 1.為什麼要加入 blinky.xdc 這個 Constraint ?
 因為...我還真他媽不知道
