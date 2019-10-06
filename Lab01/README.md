@@ -9,7 +9,7 @@
 我們在每一個state都有設一個專屬的counter  
 (0 : green, 1 : yellow, 2 : red)  
 counter每個clk + 1  
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/QMmP06Y/LAB01-1.png" alt="LAB01-1" border="0"></a><br />  
+<a href="https://ibb.co/vkz39JL/"><img src="https://i.ibb.co/QMmP06Y/LAB01-1.png" alt="LAB01-1" border="0"></a><br />
 只要counter到達該燈號的指定秒數就跳至下一state  
 燈號指定秒數可在設定階段(sw = 2'd1, 2'd2, 2'd3)透過btn[1]、btn[2]、btn[3]來調節。  
 本來應該是不用那麼多，但是一開始為了方便看就設了那麼多，之後就沿用了。  
