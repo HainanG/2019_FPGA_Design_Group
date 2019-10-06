@@ -3,7 +3,7 @@
 林柏維 E24064216、吳文歆 E24066064、陳哲彥 E24066365
 ## Program 1 - 使用板子上的 RGB LED 實現路口交通號誌
 ### 狀態圖
-![Alt text](https://ibb.co/JczZ8cc)
+![Alt text](https://i.ibb.co/qDR6hDD/image.jpg)
 ## Bonus
 
 ## Bonus 2
