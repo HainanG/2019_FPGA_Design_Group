@@ -12,7 +12,7 @@
 <a href="https://ibb.co/vkz39JL/"><img src="https://i.ibb.co/QMmP06Y/LAB01-1.png" alt="LAB01-1" border="0"></a><br />
 counter 每個 clk + 1  
 只要 counter 到達該燈號的指定秒數就跳至下一 state  
-> 燈號指定秒數可在設定階段 (sw = 2'd1, 2'd2, 2'd3) 透過 btn[1] 、 btn[2] 、btn[3] 來調節
+( 燈號指定秒數可在設定階段 (sw = 2'd1, 2'd2, 2'd3) 透過 btn[1] 、 btn[2] 、btn[3] 來調節 )
 
 
 * 為什麼 counter 要 5 bits ?  
