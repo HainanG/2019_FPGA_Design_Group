@@ -17,7 +17,7 @@
 
 ## Bonus
 ### 細節
-![Alt text](https://i.ibb.co/hXQqzGK/2.png)
+![Alt text](https://i.ibb.co/xgnDdcv/2.png)
 ### btn 使用說明  
 只能在設定階段用(sw = 2’d1, 2’d2, 2’d3)  
 共有 btn[1] , btn[2] , btn[3] 可使用  
@@ -26,7 +26,7 @@ btn[2] : 加一秒
 btn[1] : 減一秒  
 ## Bonus 2
 ### 系統設計圖
-![Alt text](https://i.ibb.co/9vcmsYd/3.png)
+![Alt text](https://i.ibb.co/7Vkd0c6/3.png)
 ## Problems
 #### 1.為什麼要加入 blinky.xdc 這個 Constraint ?
 因為...我還真他媽不知道
