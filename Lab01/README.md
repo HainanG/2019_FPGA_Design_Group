@@ -29,8 +29,6 @@ btn[1] : 減一秒
 ## Bonus 2
 ### 系統設計圖
 ![Alt text](https://i.ibb.co/7Vkd0c6/3.png)  
-![Alt text][https://i.ibb.co/7Vkd0c6/3.png]  
-<a href="https://ibb.co/3WR9PXL"><img src="https://i.ibb.co/7Vkd0c6/3.png" alt="3" border="0" /></a>
 ### LED_RGB運作圖
 ![Alt text](https://i.ibb.co/xgnDdcv/2.png)
 ## Problems
