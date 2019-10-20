@@ -10,7 +10,7 @@
 再利用混和色光，即可完成彩虹七色的輪流變換  
 ### 程式碼說明
 宣告Delay的長度   
-![define delay](images/definedelay.png) 
+![define delay](images/define-delay.png) 
 連結程式與板子的LED R G B   
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/TRY5Mgx/define-RGB.png" alt="define-RGB" border="0"></a>    
 燈號控制 ex:紅燈  
