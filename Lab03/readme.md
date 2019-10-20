@@ -13,7 +13,7 @@
 ![define delay](images/define-delay.png) 
 
 連結程式與板子的LED R G B   
-![define RGB](images/define_RGB.png)    
+![define RGB](images/define-RGB.png)    
 燈號控制 ex:紅燈  
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/16KBwC3/image.png" alt="image" border="0"></a>  
 用for迴圈來製造Delay，讓上個燈號維持一段時間，再換下個燈號  
