@@ -16,12 +16,11 @@
 ![define RGB](images/define-RGB.png)    
 燈號控制 ex:紅燈 
 ![紅燈](images/紅燈.png)
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/16KBwC3/image.png" alt="image" border="0"></a>  
 用for迴圈來製造Delay，讓上個燈號維持一段時間，再換下個燈號  
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/4Kn1b9r/Delay.png" alt="Delay" border="0"></a>
+![delay](images/Delay.png)
 ### 程式主要概念圖
-<a href="https://ibb.co/MpH5bC7"><img src="https://i.ibb.co/hHN1kmV/1.png" alt="1" border="0"></a>  
-<a href="https://ibb.co/0shqc3n"><img src="https://i.ibb.co/XYSXbTW/2.png" alt="2" border="0"></a>
+![概念圖1](images/概念圖1.png)
+![概念圖2](images/概念圖2.png)
 ## Program 2 - Hash Function
 
 
