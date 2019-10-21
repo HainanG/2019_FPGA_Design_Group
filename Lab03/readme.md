@@ -39,7 +39,13 @@ AXI GPIO 用來連結 switches
 一直計算到下一個位置為 0 時會跳出迴圈，最後 return 與 0x7FFFFFFF 做 & 邏輯運算的結果  
 即 input[0] 的 hash 會從 input[0] 加到 input[8] ， input[1] 的 hash 為 input[1] 加到 input[8]，以此類推  
 ### 程式碼說明
-
+![counter](images/counter.PNG)  
+counter用來計算while跑的次數，每 10000000 進去 if 一次以防 while 跑太快 cout 的速度太快  
+  
+![cout_hash](images/cout_hash.PNG)  
+以 16進位 輸出結果，為了不要讓數字太常不好看，取了16的餘數，使結果只會有一位 0~F 的數字
+### 輸出結果
+![program2](images/program2.PNG)
 ## Program 3 - Sorting
 
 
