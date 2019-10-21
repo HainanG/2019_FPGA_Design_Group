@@ -58,7 +58,7 @@ counter用來計算while跑的次數，每 10000000 進去 if 一次以防 while
 
 ## Program 3 - Sorting
 建立 Zynq Processor 系統  
-因為只需輸入與輸出，所以不需要AXI GPIO  
+因為只需 cin 與 cout，所以不需要AXI GPIO  
 輸入要排列的 20 個數字後存入陣列  
 使用 C++ 內建的 sort 排序並輸出結果
 ### C++ 內建 sort
@@ -67,7 +67,7 @@ C++ STL 中定義了一個 SORT_MAX 變量來進行判斷
 在這裡使用的為 insertion sort  
 
 ![include](images/include.PNG)  
-include <algorithm> 來使用 sort  
+include algorithm 來使用 sort  
     
 ![sort](images/sort.PNG)  
 排列 陣列n 裡面的數字
