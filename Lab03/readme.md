@@ -36,7 +36,7 @@ AXI GPIO 用來連結 switches
 ![BKDR hash](images/BKDR_hash.PNG)  
 將儲存學號的input陣列輸入，因為儲存的data type 為 char , 所以計算時會轉由 ASCII code 的值計算  
 將 hash * seed 後再加上自己的值，放回hash裡，str指向下一個位置(先*str後str++)  
-一直計算到下一個位置為 0 時會跳出迴圈，最後 return 與 0x7FFFFFFF 做 & 邏輯運算的結果  
+一直計算到下一個位置為 '\0' 時會跳出迴圈，最後 return 與 0x7FFFFFFF 做 & 邏輯運算的結果  
 即 input[0] 的 hash 會從 input[0] 加到 input[8] ， input[1] 的 hash 為 input[1] 加到 input[8]，以此類推  
 ### 程式碼說明
 ![counter](images/counter.PNG)  
