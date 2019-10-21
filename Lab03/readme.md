@@ -36,7 +36,7 @@ AXI GPIO 用來連結 switches
 當 switch 為 0 時，輸出 E24066064 經 hash function 轉換後的結果  
 當 switch 為 1 時，輸出 E24064216 經 hash function 轉換後的結果  
 當 switch 為 2 時，輸出 E24066365 經 hash function 轉換後的結果  
-當 switch 為 0 時，則輸出 RECIPIENT UNKNOWN  
+當 switch 為 3 時，則輸出 RECIPIENT UNKNOWN  
 ### BKDR Hash
 ![BKDR hash](images/BKDR_hash.PNG)  
 因為輸入的data type 為 char , 所以計算時會轉由 ASCII code 的值計算  
