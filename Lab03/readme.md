@@ -50,20 +50,29 @@ str指向下一個位置(先 *str 後 str++ )
 counter用來計算while跑的次數，每 10000000 進去 if 一次以防 while 跑太快 cout 的速度太快  
   
 ![cout_hash](images/cout_hash.PNG)  
-以 16進位 輸出結果，為了不要讓數字太常不好看，取了16的餘數，使結果只會有一位 0~F 的數字
+以 16進位 輸出結果，為了不要讓數字太長不好看，取了16的餘數，使結果只會有一位 0~F 的數字
 ### 輸出結果
-![program2](images/program2.PNG)
+![program2](images/program2.PNG)  
+### Block diagram
+![block](images/block_design2.PNG)
+
 ## Program 3 - Sorting
 建立 Zynq Processor 系統  
 因為只需輸入與輸出，所以不需要AXI GPIO  
 輸入要排列的 20 個數字後存入陣列  
 使用 C++ 內建的 sort 排序並輸出結果
-### std::sort
+### C++ 內建 sort
+C++ STL 中定義了一個 SORT_MAX 變量來進行判斷  
+如果大於 SORT_MAX 使用 quick sort，小於的話則使用 insertion sort  
+在這裡使用的為 insertion sort  
+
 ![include](images/include.PNG)  
-intclude <algorithm> 來使用 sort  
+include <algorithm> 來使用 sort  
     
 ![sort](images/sort.PNG)  
 排列 陣列n 裡面的數字
 ### 輸出結果
-![program3](images/program3.PNG)
+![program3](images/program3.PNG)  
+### Block diagram
+![block](images/block_design2.PNG)
 
