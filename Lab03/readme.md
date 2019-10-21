@@ -25,9 +25,6 @@
 while迴圈重複執行:
 ![概念圖1](images/概念圖1.png)
 ![概念圖2](images/概念圖2.png)
-### Block design
-![block](images/HW3-1-blockdesign.png)
-
 ## Program 2 - Hash Function
 建立以 Zynq Processor 和 1個 AXI GPIO 組成的系統  
 AXI GPIO 用來連結 switches  
@@ -37,11 +34,13 @@ AXI GPIO 用來連結 switches
 當 switch 為 0 時，則輸出 RECIPIENT UNKNOWN  
 ### BKDR Hash
 ![BKDR hash](images/BKDR_hash.PNG)  
-將儲存學號的input陣列輸入，因為儲存的data type 為 char , 所以計算時會轉由 ASCII code 的值計算  
-將 hash * seed 後再加上自己的值，放回hash裡，str指向下一個位置(先*str後str++)  
-一直計算到下一個位置為 '\0' 時會跳出迴圈，最後 return 與 0x7FFFFFFF 做 & 邏輯運算的結果  
+因為輸入的data type 為 char , 所以計算時會轉由 ASCII code 的值計算  
+將 hash * seed 後再加上自己的值，放回hash裡  
+str指向下一個位置(先 *str 後 str++ )  
+一直計算到下一個位置為 0 時會跳出迴圈，最後 return 與 0x7FFFFFFF 做 & 邏輯運算的結果  
 即 input[0] 的 hash 會從 input[0] 加到 input[8] ， input[1] 的 hash 為 input[1] 加到 input[8]，以此類推  
 ### 程式碼說明
+  
 ![counter](images/counter.PNG)  
 counter用來計算while跑的次數，每 10000000 進去 if 一次以防 while 跑太快 cout 的速度太快  
   
@@ -50,6 +49,16 @@ counter用來計算while跑的次數，每 10000000 進去 if 一次以防 while
 ### 輸出結果
 ![program2](images/program2.PNG)
 ## Program 3 - Sorting
+建立 Zynq Processor 系統  
+因為只需輸入與輸出，所以不需要AXI GPIO  
+輸入要排列的 20 個數字後存入陣列  
+使用 C++ 內建的 sort 排序並輸出結果
+### std::sort
+![include](images/include.PNG)  
+intclude <algorithm> 來使用 sort  
+    
+![sort](images/sort.PNG)  
+排列 陣列n 裡面的數字
+### 輸出結果
+![program3](images/program3.PNG)
 
-
-## 備註
