@@ -1,7 +1,7 @@
 /*
  * hw3-1.c
  *
- *  Created on: 2019¦~10¤ë19¤é
+ *  Created on: 2019Â¦~10Â¤Ã«19Â¤Ã©
  *      Author: cheye
  */
 #include "xparameters.h"
@@ -50,12 +50,12 @@ int main() {
 			//XGpio_DiscreteWrite(&LED_Gpio, 1, led_data);
 
 			/* Wait a small amount of time so the LED is visible */
-			for (int Delay = 0; Delay < LED_DELAY/1.8; Delay++);//¬õ
-			XGpio_DiscreteWrite(&R_Gpio, 1, 0xff);
+			for (int Delay = 0; Delay < LED_DELAY/1.8; Delay++);
+			XGpio_DiscreteWrite(&R_Gpio, 1, 0xff);				//ç´…
 			XGpio_DiscreteWrite(&G_Gpio, 1, 0x00);
 			XGpio_DiscreteWrite(&B_Gpio, 1, 0x00);
-			for (int Delay = 0; Delay < LED_DELAY; Delay++);//¾í
-			XGpio_DiscreteWrite(&R_Gpio, 1, 0xff);
+			for (int Delay = 0; Delay < LED_DELAY; Delay++);
+			XGpio_DiscreteWrite(&R_Gpio, 1, 0xff);				//æ©™
 			XGpio_DiscreteWrite(&B_Gpio, 1, 0x00);
 			for (int Delay = 0; Delay < LED_DELAY/22; Delay++)
 			{
@@ -65,23 +65,23 @@ int main() {
 					XGpio_DiscreteWrite(&G_Gpio, 1, 0x00);
 			}
 
-			XGpio_DiscreteWrite(&R_Gpio, 1, 0xff);
+			XGpio_DiscreteWrite(&R_Gpio, 1, 0xff);				//é»ƒ
 			XGpio_DiscreteWrite(&G_Gpio, 1, 0xff);
 			XGpio_DiscreteWrite(&B_Gpio, 1, 0x00);
-			for (int Delay = 0; Delay < LED_DELAY; Delay++);//ºñ
-			XGpio_DiscreteWrite(&R_Gpio, 1, 0x00);
+			for (int Delay = 0; Delay < LED_DELAY; Delay++);
+			XGpio_DiscreteWrite(&R_Gpio, 1, 0x00);				//ç¶ 
 			XGpio_DiscreteWrite(&G_Gpio, 1, 0xff);
 			XGpio_DiscreteWrite(&B_Gpio, 1, 0x00);
-			for (int Delay = 0; Delay < LED_DELAY; Delay++);//ÂÅ
-			XGpio_DiscreteWrite(&R_Gpio, 1, 0x00);
+			for (int Delay = 0; Delay < LED_DELAY; Delay++);
+			XGpio_DiscreteWrite(&R_Gpio, 1, 0x00);				//è—
 			XGpio_DiscreteWrite(&G_Gpio, 1, 0xff);
 			XGpio_DiscreteWrite(&B_Gpio, 1, 0xff);
-			for (int Delay = 0; Delay < LED_DELAY; Delay++);//ÀQ
-			XGpio_DiscreteWrite(&R_Gpio, 1, 0x00);
+			for (int Delay = 0; Delay < LED_DELAY; Delay++);
+			XGpio_DiscreteWrite(&R_Gpio, 1, 0x00);				//é›
 			XGpio_DiscreteWrite(&G_Gpio, 1, 0x00);
 			XGpio_DiscreteWrite(&B_Gpio, 1, 0xff);
-			for (int Delay = 0; Delay < LED_DELAY; Delay++);//µµ
-			XGpio_DiscreteWrite(&R_Gpio, 1, 0xff);
+			for (int Delay = 0; Delay < LED_DELAY; Delay++);
+			XGpio_DiscreteWrite(&R_Gpio, 1, 0xff);				//ç´«
 			XGpio_DiscreteWrite(&G_Gpio, 1, 0x00);
 			XGpio_DiscreteWrite(&B_Gpio, 1, 0xff);
 
