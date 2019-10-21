@@ -14,9 +14,10 @@
 
 連結程式與板子的LED R G B   
 ![define RGB](images/define-RGB.png)    
-燈號控制ex:紅燈 
+燈號控制ex:紅光.橙光 
 
 ![紅燈](images/紅燈.png)
+![橙光](images/橙光.)
 
 用for迴圈來製造Delay，讓上個燈號維持一段時間，再換下個燈號  
 ![delay](images/Delay.png)
@@ -25,6 +26,10 @@
 while迴圈重複執行:
 ![概念圖1](images/概念圖1.png)
 ![概念圖2](images/概念圖2.png)
+### Block diagram
+![block](images/HW3-1-blockdesign.png)
+
+
 ## Program 2 - Hash Function
 建立以 Zynq Processor 和 1個 AXI GPIO 組成的系統  
 AXI GPIO 用來連結 switches  
