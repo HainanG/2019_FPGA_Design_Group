@@ -17,7 +17,7 @@
 燈號控制ex:紅光.橙光 
 
 ![紅燈](images/紅燈.png)
-![橙光](images/橙光.)
+![橙光](images/橙光.png)
 
 用for迴圈來製造Delay，讓上個燈號維持一段時間，再換下個燈號  
 ![delay](images/Delay.png)
