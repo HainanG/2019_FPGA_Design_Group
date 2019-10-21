@@ -43,7 +43,7 @@ AXI GPIO 用來連結 switches
 counter用來計算while跑的次數，每 10000000 進去 if 一次以防 while 跑太快 cout 的速度太快  
   
 ![cout_hash](images/cout_hash.PNG)  
-以 16進位 輸出結果，為了不要讓數字太常不好看，取了16的餘數，使結果只會有一位 0~F 的數字
+以 16進位 輸出結果，為了不要讓數字太長不好看，取了16的餘數，使結果只會有一位 0~F 的數字
 ### 輸出結果
 ![program2](images/program2.PNG)
 ## Program 3 - Sorting
