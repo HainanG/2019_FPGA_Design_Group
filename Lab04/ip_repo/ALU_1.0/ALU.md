@@ -1,7 +1,7 @@
 # ALU  
 ## 說明  
 ### Step 1:  
-依序輸入8bits signed integer A(-128~127), operator(+,-,*), 8bits signed integer B (-128~127)  
+依序輸入8bits signed integer A(-128 ~ 127), operator(+ , - , * ), 8bits signed integer B (-128 ~ 127)  
 ### Step 2:
 使用 2's complement 做計算，達成 interger 可以任意為正數或負數，並判斷overflow    
 ### Step 3:  
@@ -28,7 +28,7 @@ data = (A&0x000000ff) + ((B&0x000000ff) << 8) + ((C&0x00000003) << 16);
 將接收到的 32 bits 判斷有無 overflow    
 1. 有 : 顯示overflow  
 2. 無 : 判斷是否為負數  
-      (1) 是 : 前面補滿 1 ，顯示
+      (1) 是 : 前面補滿 1 ，顯示  
       (2) 否 : 顯示
 
 
