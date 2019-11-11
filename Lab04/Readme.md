@@ -12,9 +12,9 @@
 [使用說明](使用說明.md)  
 [Sorting](ip_repo/sorting_1.0/Sorting.md)  
 [ALU](ip_repo/ALU_1.0/ALU.md)  
-[Parity]()  
-[Hash_djb2]()  
-[PWM]()
+[Parity](ip_repo/parity_1.0/Parity.md)  
+[Hash_djb2](ip_repo/hash_djb2_1.0/Hash_djb2.md)  
+[PWM](ip_repo/PWM_1.0/PWM.md)
 
 
 
