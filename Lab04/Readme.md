@@ -10,8 +10,8 @@
 ![total block diagram](images/Total_block_diagram.png)  
 ### 其他連結  
 [使用說明](使用說明.md)  
-[Sorting]()  
-[ALU]()  
+[Sorting](ip_repo/sorting_1.0/Sorting.md)  
+[ALU](ip_repo/ALU_1.0/ALU.md)  
 [Parity]()  
 [Hash_djb2]()  
 [PWM]()
