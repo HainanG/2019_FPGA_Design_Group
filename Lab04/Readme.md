@@ -5,7 +5,7 @@
 
 ![start](images/start.png)
 
-sorting
+Sorting
 ![sorting1](images/sorting1.png)
 ![sorting2](images/sorting2.png)
 
@@ -16,11 +16,11 @@ ALU
 ![posoverflow](images/posoverflow.png)
 ![negoverflow](images/negoverflow.png)
 
-parity
+Parity
 ![parity](images/parity.png)
 ![parity2](images/parity2.png)
 
-hash
+Hash
 ![hash](images/hash.png)
 
 PWM
