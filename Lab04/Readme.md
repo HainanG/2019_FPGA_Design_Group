@@ -4,7 +4,7 @@
 ## 整體架構  
 ![整體架構](images/整體架構.png)  
 ![FPGA架構](imges/FPGA架構圖.png)  
-![total block diagram](images/Total_block_diagram.)  
+![total block diagram](images/Total_block_diagram.png)  
 ### 其他連結  
 [使用說明](使用說明.md)
 
