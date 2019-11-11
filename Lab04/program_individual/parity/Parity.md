@@ -23,5 +23,5 @@
 將接收到的 odd parity bit 顯示  
    
 在硬體端，根據接收到的 odd parity bit 訊號，決定led[0] 要不要亮  
->程式一開始執行(案run)時 led[0] 初始值會亮
+>程式一開始執行(案run)時 led[0] 初始值會亮  
 >之後執行 parity program 再退出 (‘zz’) led[0] 會改成 0
