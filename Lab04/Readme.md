@@ -4,6 +4,7 @@
 開始介面
 
 ![start](images/start.png)
+
 sorting
 ![sorting1](images/sorting1.png)
 ![sorting2](images/sorting2.png)
