@@ -10,11 +10,11 @@
 ![total block diagram](images/Total_block_diagram.png)  
 ### 其他連結  
 [使用說明](使用說明.md)  
-[Sorting](ip_repo/sorting_1.0/Sorting.md)  
-[ALU](ip_repo/ALU_1.0/ALU.md)  
-[Parity](ip_repo/parity_1.0/Parity.md)  
-[Hash_djb2](ip_repo/hash_djb2_1.0/Hash_djb2.md)  
-[PWM](ip_repo/PWM_1.0/PWM.md)
+[Sorting](program_individual/sorting/Sorting.md)  
+[ALU](program_individual/ALU/ALU.md)  
+[Parity](program_individual/parity/Parity.md)  
+[Hash_djb2](program_individual/hash_djb2/Hash_djb2.md)  
+[PWM](program_individual/PWM/PWM.md)
 
 
 
