@@ -1,4 +1,4 @@
-# ALU  
+# Parity  
 ## 說明  
 ### Step 1:  
 依序輸入32 bits (0/1)  
