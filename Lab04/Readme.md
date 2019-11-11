@@ -38,6 +38,10 @@
 輸出結果  odd_parity_bit=1 代表32bit共有偶數個1
 ![parity2](images/parity2.png)
 
+當odd_parity_bit為1時，黃圈處燈亮
+
+![parity3](images/parity3.png)
+
 ##輸入4可進入 Hash模式
 
 hash範例
