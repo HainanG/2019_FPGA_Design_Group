@@ -38,3 +38,4 @@ Counter+1 ，透過Interface從BRAM中存取對應位置(address=Counter)的指�
 除了轉置矩陣原本就會是輸出 32bits, 其餘運算方式所得出的答案皆要補滿至 **32bits** 來輸出  
 ## 備註
 **測試用的 code 在 src 裡**  
+**指令一次最多測試 28 條**  
