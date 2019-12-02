@@ -17,9 +17,10 @@ Counter+1 ，透過 Interface 從 BRAM 中存取對應位置 ( address = Counter
 若合法，Controller 透過 Interface 向 BRAM 拿取對應位置的資料 ( address * 4 + 28 開始連續 4 個位置 ) 並傳至 Processor  
 ### Step 4
 ![5](images/5.PNG)  
-Processor 運算完後告訴 Controller，並透過 Interface 將答案存回 BRAM 的對應位置 ( address * 4 + 28 * 5 開始連續 4 個位置 )  
+Processor 運算完後告訴 Controller  
+並透過 Interface 將答案存回 BRAM 的對應位置 ( address * 4 + 28 * 5 開始連續 4 個位置 )  
 ### Step 5
 ![6](images/6.PNG)  
 儲存完後，Processor 告訴 Controller 要讀取下個指令  
 Counter+1 ，透過 Interface 從 BRAM 中存取對應位置 ( address = Counter ) 的指令  
-接著重複Step 1 ~ Step 4
+接著重複 Step 1 ~ Step 4
