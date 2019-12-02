@@ -22,5 +22,4 @@ Processor 運算完後告訴 Controller
 ### Step 5
 ![6](images/6.PNG)  
 儲存完後，Processor 告訴 Controller 要讀取下個指令  
-Counter+1 ，透過 Interface 從 BRAM 中存取對應位置 ( address = Counter ) 的指令  
-接著重複 Step 1 ~ Step 4
+接著重複上述步驟
