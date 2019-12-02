@@ -21,4 +21,5 @@ Processor 運算完後告訴 Controller，並透過 Interface 將答案存回 BR
 ### Step 5
 ![6](images/6.PNG)  
 儲存完後，Processor 告訴 Controller 要讀取下個指令  
-Counter+1 ，透過 Interface 從 BRAM 中存取對應位置 ( address = Counter ) 的指令
+Counter+1 ，透過 Interface 從 BRAM 中存取對應位置 ( address = Counter ) 的指令  
+接著重複Step 1 ~ Step 4
