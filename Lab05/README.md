@@ -22,4 +22,4 @@ Processor 運算完後告訴 Controller
 ### Step 5
 ![6](images/6.PNG)  
 儲存完後，Processor 告訴 Controller 要讀取下個指令  
-接著重複上述步驟
+接著重複 Step 1 ~ Step 4
