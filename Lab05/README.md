@@ -24,3 +24,15 @@ Processor 運算完後告訴 Controller
 儲存完後，Processor 告訴 Controller 要讀取下個指令  
 Counter+1 ，透過Interface從BRAM中存取對應位置(address=Counter)的指令  
 接著回到 Step 2 
+## 運算方式   
+### 指令 :  
+  1 : 加法  
+  2 : 減法  
+  3 : 乘法  
+  4 : 轉置矩陣  
+  5 : 行列式  
+### 運算方式  
+2補數運算  
+每個指令皆會在對應位置讀取4個輸入資料 (8bits * 4)  
+( **加法、減法、乘法 實際上只會用前2個** )  
+除了轉置矩陣原本就會是輸出 32bits, 其餘答案皆要補滿至 **32bits** 輸出  
