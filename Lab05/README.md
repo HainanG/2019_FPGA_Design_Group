@@ -24,7 +24,7 @@ Processor 運算完後告訴 Controller
 儲存完後，Processor 告訴 Controller 要讀取下個指令  
 Counter+1 ，透過Interface從BRAM中存取對應位置(address=Counter)的指令  
 接著回到 Step 2 
-## 運算方式   
+## 運算概念   
 ### 指令  
   1 : 加法  
   2 : 減法  
