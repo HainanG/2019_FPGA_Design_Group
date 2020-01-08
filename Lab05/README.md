@@ -4,6 +4,10 @@
 ## 說明  
 ### 記憶體分配(256 * 8-bits)  
 ![1](images/1.PNG)  
+### [更新] Block Design     
+![7](images/lab5_block_design.png)  
+助教對不起QQ 考試太忙一直忘記...對不起QQ  
+lab6的block design也是這張圖><  
 ### Step 1
 ![2](images/2.PNG)  
 一開始 Processor 告訴 Controller 要讀取下個指令  
