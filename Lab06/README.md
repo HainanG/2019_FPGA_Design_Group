@@ -5,6 +5,9 @@
 ### 記憶體分配(256 * 8-bits)  
 ![1](images/1.PNG)  
 運作原理同 [Lab05](https://github.com/HainanG/2019_FPGA_Design_Group9/blob/master/Lab05/README.md)  
+### [更新] Block Design  
+![2](images/lab6_block_design.png)  
+助教對不起..考試太忙了QQ  
 ## 指令  
 6 : 卷積運算 (1~5為hw5的指令，此程式不適用)  
   
