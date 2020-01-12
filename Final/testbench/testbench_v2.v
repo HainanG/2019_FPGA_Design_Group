@@ -26,7 +26,7 @@ module testbench_v2();
 	wire cmd_done_data;
 	wire [7:0]data_out_data;
 
-	simulate_1_wrapper d1(
+	simulate_1_wrapper d2(
 		.clk(clk),
 		.rst_n(rst_n),
 		.cmd(cmd),
