@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER start_signal
+	OPTION supported_peripherals = (start_signal);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = start_signal;
+END DRIVER
