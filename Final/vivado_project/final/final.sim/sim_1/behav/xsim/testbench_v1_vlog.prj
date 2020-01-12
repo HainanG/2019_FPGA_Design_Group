@@ -1,0 +1,58 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../final.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../final.srcs/sources_1/bd/design_1/ipshared/70cf/hdl" --include "C:/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
+"../../../../final.ip_user_files/bd/simulate_1/ipshared/019a/src/alu.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ip/simulate_1_ALU_0_0/sim/simulate_1_ALU_0_0.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ipshared/bc92/src/adder_pc.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ip/simulate_1_adder_pc_0_0/sim/simulate_1_adder_pc_0_0.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ipshared/71d3/src/imme_ext.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ip/simulate_1_imme_ext_0_0/sim/simulate_1_imme_ext_0_0.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ipshared/0493/src/jump_pc.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ip/simulate_1_jump_pc_0_0/sim/simulate_1_jump_pc_0_0.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ipshared/0c7f/src/mem_data.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ip/simulate_1_mem_data_0_0/sim/simulate_1_mem_data_0_0.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ipshared/b413/src/mem_inst.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ip/simulate_1_mem_inst_0_0/sim/simulate_1_mem_inst_0_0.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ipshared/501f/src/mux_2.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ip/simulate_1_mux_2_0_0/sim/simulate_1_mux_2_0_0.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ip/simulate_1_mux_2_1_0/sim/simulate_1_mux_2_1_0.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ip/simulate_1_mux_2_2_0/sim/simulate_1_mux_2_2_0.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ip/simulate_1_mux_2_3_0/sim/simulate_1_mux_2_3_0.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ipshared/9897/src/mux_2_8bits.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ip/simulate_1_mux_2_8bits_0_0/sim/simulate_1_mux_2_8bits_0_0.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ipshared/a0b7/src/mux_4.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ip/simulate_1_mux_4_0_0/sim/simulate_1_mux_4_0_0.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ip/simulate_1_mux_4_1_0/sim/simulate_1_mux_4_1_0.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ip/simulate_1_mux_4_2_0/sim/simulate_1_mux_4_2_0.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ip/simulate_1_mux_4_3_0/sim/simulate_1_mux_4_3_0.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ipshared/6b8b/src/nop.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ip/simulate_1_nop_0_0/sim/simulate_1_nop_0_0.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ipshared/b631/src/reg_Control_D.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ip/simulate_1_reg_Control_D_0_0/sim/simulate_1_reg_Control_D_0_0.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ipshared/ee9d/src/reg_Control_E.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ip/simulate_1_reg_Control_E_0_0/sim/simulate_1_reg_Control_E_0_0.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ipshared/fee7/src/reg_Control_M.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ip/simulate_1_reg_Control_M_0_0/sim/simulate_1_reg_Control_M_0_0.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ipshared/c0c5/src/reg_Control_W.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ip/simulate_1_reg_Control_W_0_0/sim/simulate_1_reg_Control_W_0_0.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ipshared/6c70/src/reg_E.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ip/simulate_1_reg_E_0_0/sim/simulate_1_reg_E_0_0.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ipshared/cdca/src/reg_M.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ip/simulate_1_reg_M_0_0/sim/simulate_1_reg_M_0_0.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ipshared/20fd/src/reg_W.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ip/simulate_1_reg_W_0_0/sim/simulate_1_reg_W_0_0.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ipshared/6b37/src/reg_pc.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ip/simulate_1_reg_pc_0_0/sim/simulate_1_reg_pc_0_0.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ipshared/ee17/src/regfile.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ip/simulate_1_regfile_0_0/sim/simulate_1_regfile_0_0.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ipshared/3a0c/src/memory_ctrl.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ip/simulate_1_memory_ctrl_0_0/sim/simulate_1_memory_ctrl_0_0.v" \
+"../../../../final.ip_user_files/bd/simulate_1/ip/simulate_1_memory_ctrl_1_0/sim/simulate_1_memory_ctrl_1_0.v" \
+"../../../../final.ip_user_files/bd/simulate_1/sim/simulate_1.v" \
+"../../../../final.srcs/sources_1/bd/simulate_1/hdl/simulate_1_wrapper.v" \
+"../../../../final.srcs/sources_1/imports/testbench/testbench_v1.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

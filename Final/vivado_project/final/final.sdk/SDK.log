@@ -1,0 +1,24 @@
+04:25:10 INFO  : Registering command handlers for SDK TCF services
+04:25:11 INFO  : Launching XSCT server: xsct.bat -interactive C:\FPGALAB\final_v4\final\final.sdk\temp_xsdb_launch_script.tcl
+04:25:14 INFO  : XSCT server has started successfully.
+04:25:14 INFO  : Successfully done setting XSCT server connection channel  
+04:25:14 INFO  : Processing command line option -hwspec C:/FPGALAB/final_v4/final/final.sdk/design_1_wrapper.hdf.
+04:25:14 INFO  : Successfully done setting SDK workspace  
+05:07:48 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1578776550643,  Project:1578773805573
+05:07:48 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at C:/FPGALAB/final_v4/final/final.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+05:07:58 INFO  : Copied contents of C:/FPGALAB/final_v4/final/final.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+05:08:04 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+05:08:07 INFO  : 
+05:08:08 INFO  : Updating hardware inferred compiler options for final.
+05:08:08 INFO  : Clearing existing target manager status.
+05:08:08 INFO  : Closing and re-opening the MSS file of ther project final_bsp
+05:08:09 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+05:08:11 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+05:08:57 INFO  : Launching XSCT server: xsct.bat -interactive C:\FPGALAB\final_v4\final\final.sdk\temp_xsdb_launch_script.tcl
+05:08:59 INFO  : XSCT server has started successfully.
+05:08:59 INFO  : Successfully done setting XSCT server connection channel  
+05:08:59 INFO  : Successfully done setting SDK workspace  
+05:09:10 INFO  : Registering command handlers for SDK TCF services
+05:09:10 INFO  : Processing command line option -hwspec C:/FPGALAB/final_v4/final/final.sdk/design_1_wrapper.hdf.
+05:09:11 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.

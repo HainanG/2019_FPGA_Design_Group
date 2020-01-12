@@ -1,0 +1,756 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x24FEDB70A064A28B",
+      "device": "xc7z020clg400-1",
+      "name": "simulate_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "ALU_0": "",
+      "adder_pc_0": "",
+      "imme_ext_0": "",
+      "jump_pc_0": "",
+      "mem_data_0": "",
+      "mem_inst_0": "",
+      "mux_2_0": "",
+      "mux_2_1": "",
+      "mux_2_2": "",
+      "mux_2_3": "",
+      "mux_2_8bits_0": "",
+      "mux_4_0": "",
+      "mux_4_1": "",
+      "mux_4_2": "",
+      "mux_4_3": "",
+      "nop_0": "",
+      "reg_Control_D_0": "",
+      "reg_Control_E_0": "",
+      "reg_Control_M_0": "",
+      "reg_Control_W_0": "",
+      "reg_E_0": "",
+      "reg_M_0": "",
+      "reg_W_0": "",
+      "reg_pc_0": "",
+      "regfile_0": "",
+      "memory_ctrl_0": "",
+      "memory_ctrl_1": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "rst_n",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "simulate_1_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "rst_n": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "cmd": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "address": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "cmd_valid": {
+        "direction": "I"
+      },
+      "data_in": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "cmd_valid_data": {
+        "direction": "I"
+      },
+      "cmd_data": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "data_in_data": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "address_data": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "start_signal": {
+        "direction": "I"
+      },
+      "cmd_done": {
+        "direction": "O"
+      },
+      "data_out": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "cmd_done_data": {
+        "direction": "O"
+      },
+      "data_out_data": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      }
+    },
+    "components": {
+      "ALU_0": {
+        "vlnv": "xilinx.com:user:ALU:1.0",
+        "xci_name": "simulate_1_ALU_0_0"
+      },
+      "adder_pc_0": {
+        "vlnv": "xilinx.com:user:adder_pc:1.0",
+        "xci_name": "simulate_1_adder_pc_0_0"
+      },
+      "imme_ext_0": {
+        "vlnv": "xilinx.com:user:imme_ext:1.0",
+        "xci_name": "simulate_1_imme_ext_0_0"
+      },
+      "jump_pc_0": {
+        "vlnv": "xilinx.com:user:jump_pc:1.0",
+        "xci_name": "simulate_1_jump_pc_0_0"
+      },
+      "mem_data_0": {
+        "vlnv": "xilinx.com:user:mem_data:1.0",
+        "xci_name": "simulate_1_mem_data_0_0"
+      },
+      "mem_inst_0": {
+        "vlnv": "xilinx.com:user:mem_inst:1.0",
+        "xci_name": "simulate_1_mem_inst_0_0"
+      },
+      "mux_2_0": {
+        "vlnv": "xilinx.com:user:mux_2:1.0",
+        "xci_name": "simulate_1_mux_2_0_0"
+      },
+      "mux_2_1": {
+        "vlnv": "xilinx.com:user:mux_2:1.0",
+        "xci_name": "simulate_1_mux_2_1_0"
+      },
+      "mux_2_2": {
+        "vlnv": "xilinx.com:user:mux_2:1.0",
+        "xci_name": "simulate_1_mux_2_2_0"
+      },
+      "mux_2_3": {
+        "vlnv": "xilinx.com:user:mux_2:1.0",
+        "xci_name": "simulate_1_mux_2_3_0"
+      },
+      "mux_2_8bits_0": {
+        "vlnv": "xilinx.com:user:mux_2_8bits:1.0",
+        "xci_name": "simulate_1_mux_2_8bits_0_0"
+      },
+      "mux_4_0": {
+        "vlnv": "xilinx.com:user:mux_4:1.0",
+        "xci_name": "simulate_1_mux_4_0_0"
+      },
+      "mux_4_1": {
+        "vlnv": "xilinx.com:user:mux_4:1.0",
+        "xci_name": "simulate_1_mux_4_1_0"
+      },
+      "mux_4_2": {
+        "vlnv": "xilinx.com:user:mux_4:1.0",
+        "xci_name": "simulate_1_mux_4_2_0"
+      },
+      "mux_4_3": {
+        "vlnv": "xilinx.com:user:mux_4:1.0",
+        "xci_name": "simulate_1_mux_4_3_0"
+      },
+      "nop_0": {
+        "vlnv": "xilinx.com:user:nop:1.0",
+        "xci_name": "simulate_1_nop_0_0"
+      },
+      "reg_Control_D_0": {
+        "vlnv": "xilinx.com:user:reg_Control_D:1.0",
+        "xci_name": "simulate_1_reg_Control_D_0_0"
+      },
+      "reg_Control_E_0": {
+        "vlnv": "xilinx.com:user:reg_Control_E:1.0",
+        "xci_name": "simulate_1_reg_Control_E_0_0"
+      },
+      "reg_Control_M_0": {
+        "vlnv": "xilinx.com:user:reg_Control_M:1.0",
+        "xci_name": "simulate_1_reg_Control_M_0_0"
+      },
+      "reg_Control_W_0": {
+        "vlnv": "xilinx.com:user:reg_Control_W:1.0",
+        "xci_name": "simulate_1_reg_Control_W_0_0"
+      },
+      "reg_E_0": {
+        "vlnv": "xilinx.com:user:reg_E:1.0",
+        "xci_name": "simulate_1_reg_E_0_0"
+      },
+      "reg_M_0": {
+        "vlnv": "xilinx.com:user:reg_M:1.0",
+        "xci_name": "simulate_1_reg_M_0_0"
+      },
+      "reg_W_0": {
+        "vlnv": "xilinx.com:user:reg_W:1.0",
+        "xci_name": "simulate_1_reg_W_0_0"
+      },
+      "reg_pc_0": {
+        "vlnv": "xilinx.com:user:reg_pc:1.0",
+        "xci_name": "simulate_1_reg_pc_0_0"
+      },
+      "regfile_0": {
+        "vlnv": "xilinx.com:user:regfile:1.0",
+        "xci_name": "simulate_1_regfile_0_0"
+      },
+      "memory_ctrl_0": {
+        "vlnv": "xilinx.com:user:memory_ctrl:1.0",
+        "xci_name": "simulate_1_memory_ctrl_0_0"
+      },
+      "memory_ctrl_1": {
+        "vlnv": "xilinx.com:user:memory_ctrl:1.0",
+        "xci_name": "simulate_1_memory_ctrl_1_0"
+      }
+    },
+    "nets": {
+      "ALU_0_B_cond": {
+        "ports": [
+          "ALU_0/B_cond",
+          "nop_0/B_cond"
+        ]
+      },
+      "ALU_0_alu_out": {
+        "ports": [
+          "ALU_0/alu_out",
+          "reg_M_0/alu_in"
+        ]
+      },
+      "adder_pc_0_pc_next": {
+        "ports": [
+          "adder_pc_0/pc_next",
+          "mux_2_8bits_0/s1"
+        ]
+      },
+      "imme_ext_0_imme_out": {
+        "ports": [
+          "imme_ext_0/imme_out",
+          "reg_E_0/imme_in"
+        ]
+      },
+      "jump_pc_0_j_pc": {
+        "ports": [
+          "jump_pc_0/j_pc",
+          "mux_2_8bits_0/s2"
+        ]
+      },
+      "mem_data_0_L_data_out": {
+        "ports": [
+          "mem_data_0/L_data_out",
+          "mux_2_3/s2"
+        ]
+      },
+      "mem_inst_0_inst_out": {
+        "ports": [
+          "mem_inst_0/inst_out",
+          "reg_Control_D_0/inst_in"
+        ]
+      },
+      "mem_inst_0_pc_out": {
+        "ports": [
+          "mem_inst_0/pc_out",
+          "reg_Control_D_0/pc_in"
+        ]
+      },
+      "mux_2_0_mout": {
+        "ports": [
+          "mux_2_0/mout",
+          "reg_E_0/r1_in"
+        ]
+      },
+      "mux_2_1_mout": {
+        "ports": [
+          "mux_2_1/mout",
+          "reg_E_0/r2_in"
+        ]
+      },
+      "mux_2_2_mout": {
+        "ports": [
+          "mux_2_2/mout",
+          "mem_data_0/C_in"
+        ]
+      },
+      "mux_2_3_mout": {
+        "ports": [
+          "mux_2_3/mout",
+          "reg_W_0/WBD_data_in"
+        ]
+      },
+      "mux_2_8bits_0_mout": {
+        "ports": [
+          "mux_2_8bits_0/mout",
+          "reg_pc_0/pc_in"
+        ]
+      },
+      "mux_4_0_mout": {
+        "ports": [
+          "mux_4_0/mout",
+          "ALU_0/A"
+        ]
+      },
+      "mux_4_1_mout": {
+        "ports": [
+          "mux_4_1/mout",
+          "ALU_0/B"
+        ]
+      },
+      "mux_4_2_mout": {
+        "ports": [
+          "mux_4_2/mout",
+          "reg_M_0/C_in"
+        ]
+      },
+      "mux_4_3_mout": {
+        "ports": [
+          "mux_4_3/mout",
+          "jump_pc_0/s"
+        ]
+      },
+      "nop_0_jump_reset": {
+        "ports": [
+          "nop_0/jump_reset",
+          "reg_Control_D_0/jump_reset",
+          "reg_Control_E_0/jump_reset"
+        ]
+      },
+      "nop_0_pc_select": {
+        "ports": [
+          "nop_0/pc_select",
+          "mux_2_8bits_0/ms"
+        ]
+      },
+      "nop_0_stop": {
+        "ports": [
+          "nop_0/stop",
+          "reg_Control_D_0/D_stop",
+          "reg_pc_0/pc_stop",
+          "reg_Control_E_0/E_stop"
+        ]
+      },
+      "processing_system7_0_FCLK_CLK0": {
+        "ports": [
+          "clk",
+          "reg_Control_D_0/clk",
+          "reg_pc_0/clk",
+          "mem_inst_0/clk",
+          "regfile_0/clk",
+          "reg_E_0/clk",
+          "reg_Control_E_0/clk",
+          "reg_Control_M_0/clk",
+          "reg_M_0/clk",
+          "mem_data_0/clk",
+          "reg_Control_W_0/clk",
+          "reg_W_0/clk",
+          "memory_ctrl_1/clk",
+          "memory_ctrl_0/clk"
+        ]
+      },
+      "reg_Control_D_0_inst_out": {
+        "ports": [
+          "reg_Control_D_0/inst_out",
+          "nop_0/inst_D",
+          "imme_ext_0/inst_in",
+          "reg_Control_E_0/inst_in"
+        ]
+      },
+      "reg_Control_D_0_pc_out": {
+        "ports": [
+          "reg_Control_D_0/pc_out",
+          "reg_Control_E_0/pc_in"
+        ]
+      },
+      "reg_Control_D_0_r1_select": {
+        "ports": [
+          "reg_Control_D_0/r1_select",
+          "mux_2_0/ms"
+        ]
+      },
+      "reg_Control_D_0_r2_select": {
+        "ports": [
+          "reg_Control_D_0/r2_select",
+          "mux_2_1/ms"
+        ]
+      },
+      "reg_Control_D_0_rs1": {
+        "ports": [
+          "reg_Control_D_0/rs1",
+          "regfile_0/rs1"
+        ]
+      },
+      "reg_Control_D_0_rs2": {
+        "ports": [
+          "reg_Control_D_0/rs2",
+          "regfile_0/rs2"
+        ]
+      },
+      "reg_Control_E_0_A_select": {
+        "ports": [
+          "reg_Control_E_0/A_select",
+          "mux_4_0/ms"
+        ]
+      },
+      "reg_Control_E_0_B_select": {
+        "ports": [
+          "reg_Control_E_0/B_select",
+          "mux_4_1/ms"
+        ]
+      },
+      "reg_Control_E_0_C_select": {
+        "ports": [
+          "reg_Control_E_0/C_select",
+          "mux_4_2/ms"
+        ]
+      },
+      "reg_Control_E_0_func3": {
+        "ports": [
+          "reg_Control_E_0/func3",
+          "ALU_0/func3"
+        ]
+      },
+      "reg_Control_E_0_func7": {
+        "ports": [
+          "reg_Control_E_0/func7",
+          "ALU_0/func7"
+        ]
+      },
+      "reg_Control_E_0_inst_out": {
+        "ports": [
+          "reg_Control_E_0/inst_out",
+          "nop_0/inst_E",
+          "reg_Control_M_0/inst_in"
+        ]
+      },
+      "reg_Control_E_0_j1_select": {
+        "ports": [
+          "reg_Control_E_0/j1_select",
+          "mux_4_3/ms"
+        ]
+      },
+      "reg_Control_E_0_opcode": {
+        "ports": [
+          "reg_Control_E_0/opcode",
+          "ALU_0/opcode",
+          "jump_pc_0/opcode"
+        ]
+      },
+      "reg_Control_E_0_pc_out": {
+        "ports": [
+          "reg_Control_E_0/pc_out",
+          "mux_4_0/s4",
+          "mux_4_3/s4"
+        ]
+      },
+      "reg_Control_M_0_C_select": {
+        "ports": [
+          "reg_Control_M_0/C_select",
+          "mux_2_2/ms"
+        ]
+      },
+      "reg_Control_M_0_MemWrite": {
+        "ports": [
+          "reg_Control_M_0/MemWrite",
+          "mem_data_0/MemWrite"
+        ]
+      },
+      "reg_Control_M_0_WBD_select": {
+        "ports": [
+          "reg_Control_M_0/WBD_select",
+          "mux_2_3/ms"
+        ]
+      },
+      "reg_Control_M_0_func3": {
+        "ports": [
+          "reg_Control_M_0/func3",
+          "mem_data_0/func3"
+        ]
+      },
+      "reg_Control_M_0_inst_out": {
+        "ports": [
+          "reg_Control_M_0/inst_out",
+          "reg_Control_E_0/inst_M",
+          "reg_Control_W_0/inst_in"
+        ]
+      },
+      "reg_Control_W_0_RegWrite": {
+        "ports": [
+          "reg_Control_W_0/RegWrite",
+          "regfile_0/RegWrite"
+        ]
+      },
+      "reg_Control_W_0_inst_out": {
+        "ports": [
+          "reg_Control_W_0/inst_out",
+          "reg_Control_D_0/inst_W",
+          "reg_Control_E_0/inst_W",
+          "reg_Control_M_0/inst_W"
+        ]
+      },
+      "reg_Control_W_0_rd": {
+        "ports": [
+          "reg_Control_W_0/rd",
+          "regfile_0/rd"
+        ]
+      },
+      "reg_E_0_A": {
+        "ports": [
+          "reg_E_0/A",
+          "mux_4_0/s1",
+          "mux_4_3/s1"
+        ]
+      },
+      "reg_E_0_B": {
+        "ports": [
+          "reg_E_0/B",
+          "mux_4_1/s1",
+          "mux_4_2/s1"
+        ]
+      },
+      "reg_E_0_imme_out": {
+        "ports": [
+          "reg_E_0/imme_out",
+          "mux_4_1/s4",
+          "jump_pc_0/imme_in"
+        ]
+      },
+      "reg_M_0_C_out": {
+        "ports": [
+          "reg_M_0/C_out",
+          "mux_2_2/s1"
+        ]
+      },
+      "reg_M_0_alu_out": {
+        "ports": [
+          "reg_M_0/alu_out",
+          "mux_4_1/s3",
+          "mux_4_0/s3",
+          "mux_4_2/s3",
+          "mux_4_3/s3",
+          "mux_4_2/s4",
+          "mux_2_3/s1",
+          "mem_data_0/Mem_addr"
+        ]
+      },
+      "reg_W_0_WriteBackData": {
+        "ports": [
+          "reg_W_0/WriteBackData",
+          "mux_2_0/s2",
+          "mux_2_1/s2",
+          "mux_4_0/s2",
+          "mux_4_1/s2",
+          "mux_4_2/s2",
+          "mux_4_3/s2",
+          "mux_2_2/s2",
+          "regfile_0/Write_data"
+        ]
+      },
+      "reg_pc_0_pc_out": {
+        "ports": [
+          "reg_pc_0/pc_out",
+          "mem_inst_0/pc_in",
+          "adder_pc_0/pc_now"
+        ]
+      },
+      "reg_pc_0_start_signal_out": {
+        "ports": [
+          "reg_pc_0/start_signal_out",
+          "reg_Control_D_0/start_signal_in"
+        ]
+      },
+      "regfile_0_r1_out": {
+        "ports": [
+          "regfile_0/r1_out",
+          "mux_2_0/s1"
+        ]
+      },
+      "regfile_0_r2_out": {
+        "ports": [
+          "regfile_0/r2_out",
+          "mux_2_1/s1"
+        ]
+      },
+      "rst_n_1": {
+        "ports": [
+          "rst_n",
+          "memory_ctrl_1/rst_n",
+          "memory_ctrl_0/rst_n",
+          "reg_pc_0/rst",
+          "reg_Control_D_0/rst",
+          "regfile_0/rst",
+          "reg_Control_E_0/rst",
+          "reg_E_0/rst",
+          "reg_Control_M_0/rst",
+          "reg_M_0/rst",
+          "reg_Control_W_0/rst",
+          "reg_W_0/rst"
+        ]
+      },
+      "cmd_1": {
+        "ports": [
+          "cmd",
+          "memory_ctrl_0/cmd"
+        ]
+      },
+      "cmd_valid_1": {
+        "ports": [
+          "cmd_valid",
+          "memory_ctrl_0/cmd_valid"
+        ]
+      },
+      "data_in_1": {
+        "ports": [
+          "data_in",
+          "memory_ctrl_0/data_in"
+        ]
+      },
+      "address_1": {
+        "ports": [
+          "address",
+          "memory_ctrl_0/address"
+        ]
+      },
+      "cmd_valid_data_1": {
+        "ports": [
+          "cmd_valid_data",
+          "memory_ctrl_1/cmd_valid"
+        ]
+      },
+      "cmd_data_1": {
+        "ports": [
+          "cmd_data",
+          "memory_ctrl_1/cmd"
+        ]
+      },
+      "data_in_data_1": {
+        "ports": [
+          "data_in_data",
+          "memory_ctrl_1/data_in"
+        ]
+      },
+      "address_data_1": {
+        "ports": [
+          "address_data",
+          "memory_ctrl_1/address"
+        ]
+      },
+      "memory_ctrl_1_write_enable": {
+        "ports": [
+          "memory_ctrl_1/write_enable",
+          "mem_data_0/write_enable"
+        ]
+      },
+      "memory_ctrl_1_mem256_out": {
+        "ports": [
+          "memory_ctrl_1/mem256_out",
+          "mem_data_0/data_in"
+        ]
+      },
+      "memory_ctrl_1_address_out": {
+        "ports": [
+          "memory_ctrl_1/address_out",
+          "mem_data_0/address"
+        ]
+      },
+      "mem_data_0_data_out": {
+        "ports": [
+          "mem_data_0/data_out",
+          "memory_ctrl_1/mem256_in"
+        ]
+      },
+      "mem_inst_0_data_out": {
+        "ports": [
+          "mem_inst_0/data_out",
+          "memory_ctrl_0/mem256_in"
+        ]
+      },
+      "memory_ctrl_0_address_out": {
+        "ports": [
+          "memory_ctrl_0/address_out",
+          "mem_inst_0/address"
+        ]
+      },
+      "memory_ctrl_0_mem256_out": {
+        "ports": [
+          "memory_ctrl_0/mem256_out",
+          "mem_inst_0/data_in"
+        ]
+      },
+      "memory_ctrl_0_write_enable": {
+        "ports": [
+          "memory_ctrl_0/write_enable",
+          "mem_inst_0/write_enable"
+        ]
+      },
+      "memory_ctrl_0_cmd_done": {
+        "ports": [
+          "memory_ctrl_0/cmd_done",
+          "cmd_done"
+        ]
+      },
+      "memory_ctrl_0_data_out": {
+        "ports": [
+          "memory_ctrl_0/data_out",
+          "data_out"
+        ]
+      },
+      "memory_ctrl_1_cmd_done": {
+        "ports": [
+          "memory_ctrl_1/cmd_done",
+          "cmd_done_data"
+        ]
+      },
+      "memory_ctrl_1_data_out": {
+        "ports": [
+          "memory_ctrl_1/data_out",
+          "data_out_data"
+        ]
+      },
+      "start_signal_1": {
+        "ports": [
+          "start_signal",
+          "reg_pc_0/start_signal"
+        ]
+      }
+    }
+  }
+}

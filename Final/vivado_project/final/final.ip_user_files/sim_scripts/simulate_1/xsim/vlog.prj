@@ -1,0 +1,53 @@
+verilog xil_defaultlib  \
+"../../../bd/simulate_1/ipshared/019a/src/alu.v" \
+"../../../bd/simulate_1/ip/simulate_1_ALU_0_0/sim/simulate_1_ALU_0_0.v" \
+"../../../bd/simulate_1/ipshared/bc92/src/adder_pc.v" \
+"../../../bd/simulate_1/ip/simulate_1_adder_pc_0_0/sim/simulate_1_adder_pc_0_0.v" \
+"../../../bd/simulate_1/ipshared/71d3/src/imme_ext.v" \
+"../../../bd/simulate_1/ip/simulate_1_imme_ext_0_0/sim/simulate_1_imme_ext_0_0.v" \
+"../../../bd/simulate_1/ipshared/0493/src/jump_pc.v" \
+"../../../bd/simulate_1/ip/simulate_1_jump_pc_0_0/sim/simulate_1_jump_pc_0_0.v" \
+"../../../bd/simulate_1/ipshared/0c7f/src/mem_data.v" \
+"../../../bd/simulate_1/ip/simulate_1_mem_data_0_0/sim/simulate_1_mem_data_0_0.v" \
+"../../../bd/simulate_1/ipshared/b413/src/mem_inst.v" \
+"../../../bd/simulate_1/ip/simulate_1_mem_inst_0_0/sim/simulate_1_mem_inst_0_0.v" \
+"../../../bd/simulate_1/ipshared/501f/src/mux_2.v" \
+"../../../bd/simulate_1/ip/simulate_1_mux_2_0_0/sim/simulate_1_mux_2_0_0.v" \
+"../../../bd/simulate_1/ip/simulate_1_mux_2_1_0/sim/simulate_1_mux_2_1_0.v" \
+"../../../bd/simulate_1/ip/simulate_1_mux_2_2_0/sim/simulate_1_mux_2_2_0.v" \
+"../../../bd/simulate_1/ip/simulate_1_mux_2_3_0/sim/simulate_1_mux_2_3_0.v" \
+"../../../bd/simulate_1/ipshared/9897/src/mux_2_8bits.v" \
+"../../../bd/simulate_1/ip/simulate_1_mux_2_8bits_0_0/sim/simulate_1_mux_2_8bits_0_0.v" \
+"../../../bd/simulate_1/ipshared/a0b7/src/mux_4.v" \
+"../../../bd/simulate_1/ip/simulate_1_mux_4_0_0/sim/simulate_1_mux_4_0_0.v" \
+"../../../bd/simulate_1/ip/simulate_1_mux_4_1_0/sim/simulate_1_mux_4_1_0.v" \
+"../../../bd/simulate_1/ip/simulate_1_mux_4_2_0/sim/simulate_1_mux_4_2_0.v" \
+"../../../bd/simulate_1/ip/simulate_1_mux_4_3_0/sim/simulate_1_mux_4_3_0.v" \
+"../../../bd/simulate_1/ipshared/6b8b/src/nop.v" \
+"../../../bd/simulate_1/ip/simulate_1_nop_0_0/sim/simulate_1_nop_0_0.v" \
+"../../../bd/simulate_1/ipshared/b631/src/reg_Control_D.v" \
+"../../../bd/simulate_1/ip/simulate_1_reg_Control_D_0_0/sim/simulate_1_reg_Control_D_0_0.v" \
+"../../../bd/simulate_1/ipshared/ee9d/src/reg_Control_E.v" \
+"../../../bd/simulate_1/ip/simulate_1_reg_Control_E_0_0/sim/simulate_1_reg_Control_E_0_0.v" \
+"../../../bd/simulate_1/ipshared/fee7/src/reg_Control_M.v" \
+"../../../bd/simulate_1/ip/simulate_1_reg_Control_M_0_0/sim/simulate_1_reg_Control_M_0_0.v" \
+"../../../bd/simulate_1/ipshared/c0c5/src/reg_Control_W.v" \
+"../../../bd/simulate_1/ip/simulate_1_reg_Control_W_0_0/sim/simulate_1_reg_Control_W_0_0.v" \
+"../../../bd/simulate_1/ipshared/6c70/src/reg_E.v" \
+"../../../bd/simulate_1/ip/simulate_1_reg_E_0_0/sim/simulate_1_reg_E_0_0.v" \
+"../../../bd/simulate_1/ipshared/cdca/src/reg_M.v" \
+"../../../bd/simulate_1/ip/simulate_1_reg_M_0_0/sim/simulate_1_reg_M_0_0.v" \
+"../../../bd/simulate_1/ipshared/20fd/src/reg_W.v" \
+"../../../bd/simulate_1/ip/simulate_1_reg_W_0_0/sim/simulate_1_reg_W_0_0.v" \
+"../../../bd/simulate_1/ipshared/6b37/src/reg_pc.v" \
+"../../../bd/simulate_1/ip/simulate_1_reg_pc_0_0/sim/simulate_1_reg_pc_0_0.v" \
+"../../../bd/simulate_1/ipshared/ee17/src/regfile.v" \
+"../../../bd/simulate_1/ip/simulate_1_regfile_0_0/sim/simulate_1_regfile_0_0.v" \
+"../../../bd/simulate_1/ipshared/3a0c/src/memory_ctrl.v" \
+"../../../bd/simulate_1/ip/simulate_1_memory_ctrl_0_0/sim/simulate_1_memory_ctrl_0_0.v" \
+"../../../bd/simulate_1/ip/simulate_1_memory_ctrl_1_0/sim/simulate_1_memory_ctrl_1_0.v" \
+"../../../bd/simulate_1/sim/simulate_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

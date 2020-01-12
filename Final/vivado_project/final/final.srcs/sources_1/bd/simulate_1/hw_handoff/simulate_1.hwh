@@ -1,0 +1,1415 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Jan 12 22:50:42 2020" VIVADOVERSION="2018.3">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="tul.com.tw:pynq-z2:part0:1.0" DEVICE="7z020" NAME="simulate_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="reg_Control_D_0" PORT="clk"/>
+        <CONNECTION INSTANCE="reg_pc_0" PORT="clk"/>
+        <CONNECTION INSTANCE="mem_inst_0" PORT="clk"/>
+        <CONNECTION INSTANCE="regfile_0" PORT="clk"/>
+        <CONNECTION INSTANCE="reg_E_0" PORT="clk"/>
+        <CONNECTION INSTANCE="reg_Control_E_0" PORT="clk"/>
+        <CONNECTION INSTANCE="reg_Control_M_0" PORT="clk"/>
+        <CONNECTION INSTANCE="reg_M_0" PORT="clk"/>
+        <CONNECTION INSTANCE="mem_data_0" PORT="clk"/>
+        <CONNECTION INSTANCE="reg_Control_W_0" PORT="clk"/>
+        <CONNECTION INSTANCE="reg_W_0" PORT="clk"/>
+        <CONNECTION INSTANCE="memory_ctrl_1" PORT="clk"/>
+        <CONNECTION INSTANCE="memory_ctrl_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="rst_n" SIGIS="rst" SIGNAME="External_Ports_rst_n">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="memory_ctrl_1" PORT="rst_n"/>
+        <CONNECTION INSTANCE="memory_ctrl_0" PORT="rst_n"/>
+        <CONNECTION INSTANCE="reg_pc_0" PORT="rst"/>
+        <CONNECTION INSTANCE="reg_Control_D_0" PORT="rst"/>
+        <CONNECTION INSTANCE="regfile_0" PORT="rst"/>
+        <CONNECTION INSTANCE="reg_Control_E_0" PORT="rst"/>
+        <CONNECTION INSTANCE="reg_E_0" PORT="rst"/>
+        <CONNECTION INSTANCE="reg_Control_M_0" PORT="rst"/>
+        <CONNECTION INSTANCE="reg_M_0" PORT="rst"/>
+        <CONNECTION INSTANCE="reg_Control_W_0" PORT="rst"/>
+        <CONNECTION INSTANCE="reg_W_0" PORT="rst"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="cmd" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_cmd">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="memory_ctrl_0" PORT="cmd"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="address" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_address">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="memory_ctrl_0" PORT="address"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="cmd_valid" SIGIS="undef" SIGNAME="External_Ports_cmd_valid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="memory_ctrl_0" PORT="cmd_valid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="data_in" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_data_in">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="memory_ctrl_0" PORT="data_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="cmd_valid_data" SIGIS="undef" SIGNAME="External_Ports_cmd_valid_data">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="memory_ctrl_1" PORT="cmd_valid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="cmd_data" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_cmd_data">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="memory_ctrl_1" PORT="cmd"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="data_in_data" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_data_in_data">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="memory_ctrl_1" PORT="data_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="address_data" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_address_data">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="memory_ctrl_1" PORT="address"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="start_signal" SIGIS="undef" SIGNAME="External_Ports_start_signal">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="reg_pc_0" PORT="start_signal"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="cmd_done" SIGIS="undef" SIGNAME="memory_ctrl_0_cmd_done">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="memory_ctrl_0" PORT="cmd_done"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="data_out" RIGHT="0" SIGIS="undef" SIGNAME="memory_ctrl_0_data_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="memory_ctrl_0" PORT="data_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="cmd_done_data" SIGIS="undef" SIGNAME="memory_ctrl_1_cmd_done">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="memory_ctrl_1" PORT="cmd_done"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="data_out_data" RIGHT="0" SIGIS="undef" SIGNAME="memory_ctrl_1_data_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="memory_ctrl_1" PORT="data_out"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="2" FULLNAME="/ALU_0" HWVERSION="1.0" INSTANCE="ALU_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ALU" VLNV="xilinx.com:user:ALU:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="_lui" VALUE="&quot;0110111&quot;"/>
+        <PARAMETER NAME="_auipc" VALUE="&quot;0010111&quot;"/>
+        <PARAMETER NAME="_jal" VALUE="&quot;1101111&quot;"/>
+        <PARAMETER NAME="_jalr" VALUE="&quot;1100111&quot;"/>
+        <PARAMETER NAME="_B" VALUE="&quot;1100011&quot;"/>
+        <PARAMETER NAME="_L" VALUE="&quot;0000011&quot;"/>
+        <PARAMETER NAME="_S" VALUE="&quot;0100011&quot;"/>
+        <PARAMETER NAME="_AI" VALUE="&quot;0010011&quot;"/>
+        <PARAMETER NAME="_AR" VALUE="&quot;0110011&quot;"/>
+        <PARAMETER NAME="_add" VALUE="&quot;000&quot;"/>
+        <PARAMETER NAME="_sll" VALUE="&quot;001&quot;"/>
+        <PARAMETER NAME="_slt" VALUE="&quot;010&quot;"/>
+        <PARAMETER NAME="_sltu" VALUE="&quot;011&quot;"/>
+        <PARAMETER NAME="_xor" VALUE="&quot;100&quot;"/>
+        <PARAMETER NAME="_srl" VALUE="&quot;101&quot;"/>
+        <PARAMETER NAME="_or" VALUE="&quot;110&quot;"/>
+        <PARAMETER NAME="_and" VALUE="&quot;111&quot;"/>
+        <PARAMETER NAME="_beq" VALUE="&quot;000&quot;"/>
+        <PARAMETER NAME="_bne" VALUE="&quot;001&quot;"/>
+        <PARAMETER NAME="_blt" VALUE="&quot;100&quot;"/>
+        <PARAMETER NAME="_bge" VALUE="&quot;101&quot;"/>
+        <PARAMETER NAME="_bltu" VALUE="&quot;110&quot;"/>
+        <PARAMETER NAME="_bgeu" VALUE="&quot;111&quot;"/>
+        <PARAMETER NAME="Component_Name" VALUE="simulate_1_ALU_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="A" RIGHT="0" SIGIS="undef" SIGNAME="mux_4_0_mout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_4_0" PORT="mout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="B" RIGHT="0" SIGIS="undef" SIGNAME="mux_4_1_mout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_4_1" PORT="mout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="6" NAME="opcode" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_E_0_opcode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_E_0" PORT="opcode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="func3" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_E_0_func3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_E_0" PORT="func3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="func7" SIGIS="undef" SIGNAME="reg_Control_E_0_func7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_E_0" PORT="func7"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="B_cond" SIGIS="undef" SIGNAME="ALU_0_B_cond">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nop_0" PORT="B_cond"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="alu_out" RIGHT="0" SIGIS="undef" SIGNAME="ALU_0_alu_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_M_0" PORT="alu_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/adder_pc_0" HWVERSION="1.0" INSTANCE="adder_pc_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="adder_pc" VLNV="xilinx.com:user:adder_pc:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="simulate_1_adder_pc_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="pc_now" RIGHT="0" SIGIS="undef" SIGNAME="reg_pc_0_pc_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_pc_0" PORT="pc_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="pc_next" RIGHT="0" SIGIS="undef" SIGNAME="adder_pc_0_pc_next">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_2_8bits_0" PORT="s1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/imme_ext_0" HWVERSION="1.0" INSTANCE="imme_ext_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="imme_ext" VLNV="xilinx.com:user:imme_ext:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="_lui" VALUE="&quot;0110111&quot;"/>
+        <PARAMETER NAME="_auipc" VALUE="&quot;0010111&quot;"/>
+        <PARAMETER NAME="_jal" VALUE="&quot;1101111&quot;"/>
+        <PARAMETER NAME="_jalr" VALUE="&quot;1100111&quot;"/>
+        <PARAMETER NAME="_B" VALUE="&quot;1100011&quot;"/>
+        <PARAMETER NAME="_L" VALUE="&quot;0000011&quot;"/>
+        <PARAMETER NAME="_S" VALUE="&quot;0100011&quot;"/>
+        <PARAMETER NAME="_AI" VALUE="&quot;0010011&quot;"/>
+        <PARAMETER NAME="_sll" VALUE="&quot;001&quot;"/>
+        <PARAMETER NAME="_srl" VALUE="&quot;101&quot;"/>
+        <PARAMETER NAME="_add" VALUE="&quot;000&quot;"/>
+        <PARAMETER NAME="_slt" VALUE="&quot;010&quot;"/>
+        <PARAMETER NAME="_sltu" VALUE="&quot;011&quot;"/>
+        <PARAMETER NAME="_xor" VALUE="&quot;100&quot;"/>
+        <PARAMETER NAME="_or" VALUE="&quot;110&quot;"/>
+        <PARAMETER NAME="_and" VALUE="&quot;111&quot;"/>
+        <PARAMETER NAME="Component_Name" VALUE="simulate_1_imme_ext_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="inst_in" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_D_0_inst_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_D_0" PORT="inst_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="imme_out" RIGHT="0" SIGIS="undef" SIGNAME="imme_ext_0_imme_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_E_0" PORT="imme_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/jump_pc_0" HWVERSION="1.0" INSTANCE="jump_pc_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="jump_pc" VLNV="xilinx.com:user:jump_pc:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="_jal" VALUE="&quot;1101111&quot;"/>
+        <PARAMETER NAME="_jalr" VALUE="&quot;1100111&quot;"/>
+        <PARAMETER NAME="_B" VALUE="&quot;1100011&quot;"/>
+        <PARAMETER NAME="Component_Name" VALUE="simulate_1_jump_pc_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="6" NAME="opcode" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_E_0_opcode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_E_0" PORT="opcode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s" RIGHT="0" SIGIS="undef" SIGNAME="mux_4_3_mout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_4_3" PORT="mout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="imme_in" RIGHT="0" SIGIS="undef" SIGNAME="reg_E_0_imme_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_E_0" PORT="imme_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="j_pc" RIGHT="0" SIGIS="undef" SIGNAME="jump_pc_0_j_pc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_2_8bits_0" PORT="s2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/mem_data_0" HWVERSION="1.0" INSTANCE="mem_data_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mem_data" VLNV="xilinx.com:user:mem_data:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="_byte" VALUE="&quot;000&quot;"/>
+        <PARAMETER NAME="_halfword" VALUE="&quot;001&quot;"/>
+        <PARAMETER NAME="_word" VALUE="&quot;010&quot;"/>
+        <PARAMETER NAME="_bu" VALUE="&quot;100&quot;"/>
+        <PARAMETER NAME="_hu" VALUE="&quot;101&quot;"/>
+        <PARAMETER NAME="Component_Name" VALUE="simulate_1_mem_data_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="write_enable" SIGIS="undef" SIGNAME="memory_ctrl_1_write_enable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="memory_ctrl_1" PORT="write_enable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="data_in" RIGHT="0" SIGIS="undef" SIGNAME="memory_ctrl_1_mem256_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="memory_ctrl_1" PORT="mem256_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="address" RIGHT="0" SIGIS="undef" SIGNAME="memory_ctrl_1_address_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="memory_ctrl_1" PORT="address_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="data_out" RIGHT="0" SIGIS="undef" SIGNAME="mem_data_0_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="memory_ctrl_1" PORT="mem256_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="MemWrite" SIGIS="undef" SIGNAME="reg_Control_M_0_MemWrite">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_M_0" PORT="MemWrite"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="Mem_addr" RIGHT="0" SIGIS="undef" SIGNAME="reg_M_0_alu_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_M_0" PORT="alu_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="C_in" RIGHT="0" SIGIS="undef" SIGNAME="mux_2_2_mout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_2_2" PORT="mout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="func3" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_M_0_func3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_M_0" PORT="func3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="L_data_out" RIGHT="0" SIGIS="undef" SIGNAME="mem_data_0_L_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_2_3" PORT="s2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/mem_inst_0" HWVERSION="1.0" INSTANCE="mem_inst_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mem_inst" VLNV="xilinx.com:user:mem_inst:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="simulate_1_mem_inst_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="write_enable" SIGIS="undef" SIGNAME="memory_ctrl_0_write_enable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="memory_ctrl_0" PORT="write_enable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="data_in" RIGHT="0" SIGIS="undef" SIGNAME="memory_ctrl_0_mem256_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="memory_ctrl_0" PORT="mem256_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="address" RIGHT="0" SIGIS="undef" SIGNAME="memory_ctrl_0_address_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="memory_ctrl_0" PORT="address_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="data_out" RIGHT="0" SIGIS="undef" SIGNAME="mem_inst_0_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="memory_ctrl_0" PORT="mem256_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="pc_in" RIGHT="0" SIGIS="undef" SIGNAME="reg_pc_0_pc_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_pc_0" PORT="pc_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="pc_out" RIGHT="0" SIGIS="undef" SIGNAME="mem_inst_0_pc_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_D_0" PORT="pc_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="inst_out" RIGHT="0" SIGIS="undef" SIGNAME="mem_inst_0_inst_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_D_0" PORT="inst_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/memory_ctrl_0" HWVERSION="1.0" INSTANCE="memory_ctrl_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="memory_ctrl" VLNV="xilinx.com:user:memory_ctrl:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="simulate_1_memory_ctrl_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst_n" SIGIS="rst" SIGNAME="External_Ports_rst_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="cmd_valid" SIGIS="undef" SIGNAME="External_Ports_cmd_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="cmd_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="cmd" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_cmd">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="cmd"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="data_in" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_data_in">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="data_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="address" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_address">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="address"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="cmd_done" SIGIS="undef" SIGNAME="memory_ctrl_0_cmd_done">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="cmd_done"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="data_out" RIGHT="0" SIGIS="undef" SIGNAME="memory_ctrl_0_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="data_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="mem256_in" RIGHT="0" SIGIS="undef" SIGNAME="mem_inst_0_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mem_inst_0" PORT="data_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="address_out" RIGHT="0" SIGIS="undef" SIGNAME="memory_ctrl_0_address_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mem_inst_0" PORT="address"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="mem256_out" RIGHT="0" SIGIS="undef" SIGNAME="memory_ctrl_0_mem256_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mem_inst_0" PORT="data_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="write_enable" SIGIS="undef" SIGNAME="memory_ctrl_0_write_enable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mem_inst_0" PORT="write_enable"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/memory_ctrl_1" HWVERSION="1.0" INSTANCE="memory_ctrl_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="memory_ctrl" VLNV="xilinx.com:user:memory_ctrl:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="simulate_1_memory_ctrl_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst_n" SIGIS="rst" SIGNAME="External_Ports_rst_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="cmd_valid" SIGIS="undef" SIGNAME="External_Ports_cmd_valid_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="cmd_valid_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="cmd" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_cmd_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="cmd_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="data_in" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_data_in_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="data_in_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="address" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_address_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="address_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="cmd_done" SIGIS="undef" SIGNAME="memory_ctrl_1_cmd_done">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="cmd_done_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="data_out" RIGHT="0" SIGIS="undef" SIGNAME="memory_ctrl_1_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="data_out_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="mem256_in" RIGHT="0" SIGIS="undef" SIGNAME="mem_data_0_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mem_data_0" PORT="data_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="address_out" RIGHT="0" SIGIS="undef" SIGNAME="memory_ctrl_1_address_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mem_data_0" PORT="address"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="mem256_out" RIGHT="0" SIGIS="undef" SIGNAME="memory_ctrl_1_mem256_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mem_data_0" PORT="data_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="write_enable" SIGIS="undef" SIGNAME="memory_ctrl_1_write_enable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mem_data_0" PORT="write_enable"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/mux_2_0" HWVERSION="1.0" INSTANCE="mux_2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mux_2" VLNV="xilinx.com:user:mux_2:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="simulate_1_mux_2_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="s1" RIGHT="0" SIGIS="undef" SIGNAME="regfile_0_r1_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="regfile_0" PORT="r1_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s2" RIGHT="0" SIGIS="undef" SIGNAME="reg_W_0_WriteBackData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_W_0" PORT="WriteBackData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ms" SIGIS="undef" SIGNAME="reg_Control_D_0_r1_select">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_D_0" PORT="r1_select"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="mout" RIGHT="0" SIGIS="undef" SIGNAME="mux_2_0_mout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_E_0" PORT="r1_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/mux_2_1" HWVERSION="1.0" INSTANCE="mux_2_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mux_2" VLNV="xilinx.com:user:mux_2:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="simulate_1_mux_2_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="s1" RIGHT="0" SIGIS="undef" SIGNAME="regfile_0_r2_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="regfile_0" PORT="r2_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s2" RIGHT="0" SIGIS="undef" SIGNAME="reg_W_0_WriteBackData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_W_0" PORT="WriteBackData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ms" SIGIS="undef" SIGNAME="reg_Control_D_0_r2_select">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_D_0" PORT="r2_select"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="mout" RIGHT="0" SIGIS="undef" SIGNAME="mux_2_1_mout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_E_0" PORT="r2_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/mux_2_2" HWVERSION="1.0" INSTANCE="mux_2_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mux_2" VLNV="xilinx.com:user:mux_2:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="simulate_1_mux_2_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="s1" RIGHT="0" SIGIS="undef" SIGNAME="reg_M_0_C_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_M_0" PORT="C_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s2" RIGHT="0" SIGIS="undef" SIGNAME="reg_W_0_WriteBackData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_W_0" PORT="WriteBackData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ms" SIGIS="undef" SIGNAME="reg_Control_M_0_C_select">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_M_0" PORT="C_select"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="mout" RIGHT="0" SIGIS="undef" SIGNAME="mux_2_2_mout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mem_data_0" PORT="C_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/mux_2_3" HWVERSION="1.0" INSTANCE="mux_2_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mux_2" VLNV="xilinx.com:user:mux_2:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="simulate_1_mux_2_3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="s1" RIGHT="0" SIGIS="undef" SIGNAME="reg_M_0_alu_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_M_0" PORT="alu_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s2" RIGHT="0" SIGIS="undef" SIGNAME="mem_data_0_L_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mem_data_0" PORT="L_data_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ms" SIGIS="undef" SIGNAME="reg_Control_M_0_WBD_select">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_M_0" PORT="WBD_select"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="mout" RIGHT="0" SIGIS="undef" SIGNAME="mux_2_3_mout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_W_0" PORT="WBD_data_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/mux_2_8bits_0" HWVERSION="1.0" INSTANCE="mux_2_8bits_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mux_2_8bits" VLNV="xilinx.com:user:mux_2_8bits:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="simulate_1_mux_2_8bits_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="s1" RIGHT="0" SIGIS="undef" SIGNAME="adder_pc_0_pc_next">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="adder_pc_0" PORT="pc_next"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="s2" RIGHT="0" SIGIS="undef" SIGNAME="jump_pc_0_j_pc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jump_pc_0" PORT="j_pc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ms" SIGIS="undef" SIGNAME="nop_0_pc_select">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nop_0" PORT="pc_select"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="mout" RIGHT="0" SIGIS="undef" SIGNAME="mux_2_8bits_0_mout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_pc_0" PORT="pc_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/mux_4_0" HWVERSION="1.0" INSTANCE="mux_4_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mux_4" VLNV="xilinx.com:user:mux_4:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="simulate_1_mux_4_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="s1" RIGHT="0" SIGIS="undef" SIGNAME="reg_E_0_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_E_0" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s2" RIGHT="0" SIGIS="undef" SIGNAME="reg_W_0_WriteBackData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_W_0" PORT="WriteBackData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s3" RIGHT="0" SIGIS="undef" SIGNAME="reg_M_0_alu_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_M_0" PORT="alu_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s4" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_E_0_pc_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_E_0" PORT="pc_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="ms" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_E_0_A_select">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_E_0" PORT="A_select"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="mout" RIGHT="0" SIGIS="undef" SIGNAME="mux_4_0_mout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_0" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/mux_4_1" HWVERSION="1.0" INSTANCE="mux_4_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mux_4" VLNV="xilinx.com:user:mux_4:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="simulate_1_mux_4_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="s1" RIGHT="0" SIGIS="undef" SIGNAME="reg_E_0_B">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_E_0" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s2" RIGHT="0" SIGIS="undef" SIGNAME="reg_W_0_WriteBackData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_W_0" PORT="WriteBackData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s3" RIGHT="0" SIGIS="undef" SIGNAME="reg_M_0_alu_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_M_0" PORT="alu_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s4" RIGHT="0" SIGIS="undef" SIGNAME="reg_E_0_imme_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_E_0" PORT="imme_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="ms" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_E_0_B_select">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_E_0" PORT="B_select"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="mout" RIGHT="0" SIGIS="undef" SIGNAME="mux_4_1_mout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_0" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/mux_4_2" HWVERSION="1.0" INSTANCE="mux_4_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mux_4" VLNV="xilinx.com:user:mux_4:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="simulate_1_mux_4_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="s1" RIGHT="0" SIGIS="undef" SIGNAME="reg_E_0_B">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_E_0" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s2" RIGHT="0" SIGIS="undef" SIGNAME="reg_W_0_WriteBackData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_W_0" PORT="WriteBackData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s3" RIGHT="0" SIGIS="undef" SIGNAME="reg_M_0_alu_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_M_0" PORT="alu_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s4" RIGHT="0" SIGIS="undef" SIGNAME="reg_M_0_alu_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_M_0" PORT="alu_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="ms" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_E_0_C_select">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_E_0" PORT="C_select"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="mout" RIGHT="0" SIGIS="undef" SIGNAME="mux_4_2_mout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_M_0" PORT="C_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/mux_4_3" HWVERSION="1.0" INSTANCE="mux_4_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mux_4" VLNV="xilinx.com:user:mux_4:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="simulate_1_mux_4_3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="s1" RIGHT="0" SIGIS="undef" SIGNAME="reg_E_0_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_E_0" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s2" RIGHT="0" SIGIS="undef" SIGNAME="reg_W_0_WriteBackData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_W_0" PORT="WriteBackData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s3" RIGHT="0" SIGIS="undef" SIGNAME="reg_M_0_alu_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_M_0" PORT="alu_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s4" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_E_0_pc_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_E_0" PORT="pc_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="ms" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_E_0_j1_select">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_E_0" PORT="j1_select"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="mout" RIGHT="0" SIGIS="undef" SIGNAME="mux_4_3_mout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jump_pc_0" PORT="s"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/nop_0" HWVERSION="1.0" INSTANCE="nop_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="nop" VLNV="xilinx.com:user:nop:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="_jal" VALUE="&quot;1101111&quot;"/>
+        <PARAMETER NAME="_jalr" VALUE="&quot;1100111&quot;"/>
+        <PARAMETER NAME="_B" VALUE="&quot;1100011&quot;"/>
+        <PARAMETER NAME="_L" VALUE="&quot;0000011&quot;"/>
+        <PARAMETER NAME="_S" VALUE="&quot;0100011&quot;"/>
+        <PARAMETER NAME="_AI" VALUE="&quot;0010011&quot;"/>
+        <PARAMETER NAME="_AR" VALUE="&quot;0110011&quot;"/>
+        <PARAMETER NAME="Component_Name" VALUE="simulate_1_nop_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="B_cond" SIGIS="undef" SIGNAME="ALU_0_B_cond">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_0" PORT="B_cond"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="inst_D" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_D_0_inst_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_D_0" PORT="inst_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="inst_E" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_E_0_inst_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_E_0" PORT="inst_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="pc_select" SIGIS="undef" SIGNAME="nop_0_pc_select">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_2_8bits_0" PORT="ms"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="stop" SIGIS="undef" SIGNAME="nop_0_stop">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_D_0" PORT="D_stop"/>
+            <CONNECTION INSTANCE="reg_pc_0" PORT="pc_stop"/>
+            <CONNECTION INSTANCE="reg_Control_E_0" PORT="E_stop"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="jump_reset" SIGIS="rst" SIGNAME="nop_0_jump_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_D_0" PORT="jump_reset"/>
+            <CONNECTION INSTANCE="reg_Control_E_0" PORT="jump_reset"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/reg_Control_D_0" HWVERSION="1.0" INSTANCE="reg_Control_D_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="reg_Control_D" VLNV="xilinx.com:user:reg_Control_D:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="_jalr" VALUE="&quot;1100111&quot;"/>
+        <PARAMETER NAME="_B" VALUE="&quot;1100011&quot;"/>
+        <PARAMETER NAME="_L" VALUE="&quot;0000011&quot;"/>
+        <PARAMETER NAME="_S" VALUE="&quot;0100011&quot;"/>
+        <PARAMETER NAME="_AI" VALUE="&quot;0010011&quot;"/>
+        <PARAMETER NAME="_AR" VALUE="&quot;0110011&quot;"/>
+        <PARAMETER NAME="Component_Name" VALUE="simulate_1_reg_Control_D_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_rst_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="D_stop" SIGIS="undef" SIGNAME="nop_0_stop">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nop_0" PORT="stop"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="jump_reset" SIGIS="rst" SIGNAME="nop_0_jump_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nop_0" PORT="jump_reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="start_signal_in" SIGIS="undef" SIGNAME="reg_pc_0_start_signal_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_pc_0" PORT="start_signal_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="pc_in" RIGHT="0" SIGIS="undef" SIGNAME="mem_inst_0_pc_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mem_inst_0" PORT="pc_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="inst_in" RIGHT="0" SIGIS="undef" SIGNAME="mem_inst_0_inst_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mem_inst_0" PORT="inst_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="inst_W" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_W_0_inst_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_W_0" PORT="inst_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="r1_select" SIGIS="undef" SIGNAME="reg_Control_D_0_r1_select">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_2_0" PORT="ms"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="r2_select" SIGIS="undef" SIGNAME="reg_Control_D_0_r2_select">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_2_1" PORT="ms"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="rs1" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_D_0_rs1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="regfile_0" PORT="rs1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="rs2" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_D_0_rs2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="regfile_0" PORT="rs2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="pc_out" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_D_0_pc_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_E_0" PORT="pc_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="inst_out" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_D_0_inst_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nop_0" PORT="inst_D"/>
+            <CONNECTION INSTANCE="imme_ext_0" PORT="inst_in"/>
+            <CONNECTION INSTANCE="reg_Control_E_0" PORT="inst_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="6" FULLNAME="/reg_Control_E_0" HWVERSION="1.0" INSTANCE="reg_Control_E_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="reg_Control_E" VLNV="xilinx.com:user:reg_Control_E:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="_auipc" VALUE="&quot;0010111&quot;"/>
+        <PARAMETER NAME="_jal" VALUE="&quot;1101111&quot;"/>
+        <PARAMETER NAME="_jalr" VALUE="&quot;1100111&quot;"/>
+        <PARAMETER NAME="_B" VALUE="&quot;1100011&quot;"/>
+        <PARAMETER NAME="_L" VALUE="&quot;0000011&quot;"/>
+        <PARAMETER NAME="_S" VALUE="&quot;0100011&quot;"/>
+        <PARAMETER NAME="_AR" VALUE="&quot;0110011&quot;"/>
+        <PARAMETER NAME="Component_Name" VALUE="simulate_1_reg_Control_E_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_rst_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="jump_reset" SIGIS="rst" SIGNAME="nop_0_jump_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nop_0" PORT="jump_reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="E_stop" SIGIS="undef" SIGNAME="nop_0_stop">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nop_0" PORT="stop"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="pc_in" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_D_0_pc_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_D_0" PORT="pc_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="inst_in" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_D_0_inst_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_D_0" PORT="inst_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="inst_M" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_M_0_inst_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_M_0" PORT="inst_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="inst_W" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_W_0_inst_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_W_0" PORT="inst_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="j1_select" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_E_0_j1_select">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_4_3" PORT="ms"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="A_select" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_E_0_A_select">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_4_0" PORT="ms"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="B_select" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_E_0_B_select">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_4_1" PORT="ms"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="C_select" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_E_0_C_select">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_4_2" PORT="ms"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="6" NAME="opcode" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_E_0_opcode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_0" PORT="opcode"/>
+            <CONNECTION INSTANCE="jump_pc_0" PORT="opcode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="func3" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_E_0_func3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_0" PORT="func3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="func7" SIGIS="undef" SIGNAME="reg_Control_E_0_func7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_0" PORT="func7"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="pc_out" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_E_0_pc_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_4_0" PORT="s4"/>
+            <CONNECTION INSTANCE="mux_4_3" PORT="s4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="inst_out" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_E_0_inst_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nop_0" PORT="inst_E"/>
+            <CONNECTION INSTANCE="reg_Control_M_0" PORT="inst_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/reg_Control_M_0" HWVERSION="1.0" INSTANCE="reg_Control_M_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="reg_Control_M" VLNV="xilinx.com:user:reg_Control_M:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="_L" VALUE="&quot;0000011&quot;"/>
+        <PARAMETER NAME="_S" VALUE="&quot;0100011&quot;"/>
+        <PARAMETER NAME="Component_Name" VALUE="simulate_1_reg_Control_M_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_rst_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="inst_in" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_E_0_inst_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_E_0" PORT="inst_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="inst_W" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_W_0_inst_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_W_0" PORT="inst_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="WBD_select" SIGIS="undef" SIGNAME="reg_Control_M_0_WBD_select">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_2_3" PORT="ms"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="MemWrite" SIGIS="undef" SIGNAME="reg_Control_M_0_MemWrite">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mem_data_0" PORT="MemWrite"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="C_select" SIGIS="undef" SIGNAME="reg_Control_M_0_C_select">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_2_2" PORT="ms"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="func3" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_M_0_func3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mem_data_0" PORT="func3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="inst_out" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_M_0_inst_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_E_0" PORT="inst_M"/>
+            <CONNECTION INSTANCE="reg_Control_W_0" PORT="inst_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/reg_Control_W_0" HWVERSION="1.0" INSTANCE="reg_Control_W_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="reg_Control_W" VLNV="xilinx.com:user:reg_Control_W:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="_B" VALUE="&quot;1100011&quot;"/>
+        <PARAMETER NAME="_S" VALUE="&quot;0100011&quot;"/>
+        <PARAMETER NAME="Component_Name" VALUE="simulate_1_reg_Control_W_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_rst_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="inst_in" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_M_0_inst_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_M_0" PORT="inst_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="rd" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_W_0_rd">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="regfile_0" PORT="rd"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="RegWrite" SIGIS="undef" SIGNAME="reg_Control_W_0_RegWrite">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="regfile_0" PORT="RegWrite"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="inst_out" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_W_0_inst_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_D_0" PORT="inst_W"/>
+            <CONNECTION INSTANCE="reg_Control_E_0" PORT="inst_W"/>
+            <CONNECTION INSTANCE="reg_Control_M_0" PORT="inst_W"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/reg_E_0" HWVERSION="1.0" INSTANCE="reg_E_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="reg_E" VLNV="xilinx.com:user:reg_E:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="simulate_1_reg_E_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_rst_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="r1_in" RIGHT="0" SIGIS="undef" SIGNAME="mux_2_0_mout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_2_0" PORT="mout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="r2_in" RIGHT="0" SIGIS="undef" SIGNAME="mux_2_1_mout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_2_1" PORT="mout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="imme_in" RIGHT="0" SIGIS="undef" SIGNAME="imme_ext_0_imme_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="imme_ext_0" PORT="imme_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="A" RIGHT="0" SIGIS="undef" SIGNAME="reg_E_0_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_4_0" PORT="s1"/>
+            <CONNECTION INSTANCE="mux_4_3" PORT="s1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="B" RIGHT="0" SIGIS="undef" SIGNAME="reg_E_0_B">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_4_1" PORT="s1"/>
+            <CONNECTION INSTANCE="mux_4_2" PORT="s1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="imme_out" RIGHT="0" SIGIS="undef" SIGNAME="reg_E_0_imme_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_4_1" PORT="s4"/>
+            <CONNECTION INSTANCE="jump_pc_0" PORT="imme_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/reg_M_0" HWVERSION="1.0" INSTANCE="reg_M_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="reg_M" VLNV="xilinx.com:user:reg_M:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="simulate_1_reg_M_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_rst_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="alu_in" RIGHT="0" SIGIS="undef" SIGNAME="ALU_0_alu_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_0" PORT="alu_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="C_in" RIGHT="0" SIGIS="undef" SIGNAME="mux_4_2_mout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_4_2" PORT="mout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="alu_out" RIGHT="0" SIGIS="undef" SIGNAME="reg_M_0_alu_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_4_1" PORT="s3"/>
+            <CONNECTION INSTANCE="mux_4_0" PORT="s3"/>
+            <CONNECTION INSTANCE="mux_4_2" PORT="s3"/>
+            <CONNECTION INSTANCE="mux_4_3" PORT="s3"/>
+            <CONNECTION INSTANCE="mux_4_2" PORT="s4"/>
+            <CONNECTION INSTANCE="mux_2_3" PORT="s1"/>
+            <CONNECTION INSTANCE="mem_data_0" PORT="Mem_addr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="C_out" RIGHT="0" SIGIS="undef" SIGNAME="reg_M_0_C_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_2_2" PORT="s1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/reg_W_0" HWVERSION="1.0" INSTANCE="reg_W_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="reg_W" VLNV="xilinx.com:user:reg_W:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="simulate_1_reg_W_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_rst_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="WBD_data_in" RIGHT="0" SIGIS="undef" SIGNAME="mux_2_3_mout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_2_3" PORT="mout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="WriteBackData" RIGHT="0" SIGIS="undef" SIGNAME="reg_W_0_WriteBackData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_2_0" PORT="s2"/>
+            <CONNECTION INSTANCE="mux_2_1" PORT="s2"/>
+            <CONNECTION INSTANCE="mux_4_0" PORT="s2"/>
+            <CONNECTION INSTANCE="mux_4_1" PORT="s2"/>
+            <CONNECTION INSTANCE="mux_4_2" PORT="s2"/>
+            <CONNECTION INSTANCE="mux_4_3" PORT="s2"/>
+            <CONNECTION INSTANCE="mux_2_2" PORT="s2"/>
+            <CONNECTION INSTANCE="regfile_0" PORT="Write_data"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/reg_pc_0" HWVERSION="1.0" INSTANCE="reg_pc_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="reg_pc" VLNV="xilinx.com:user:reg_pc:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="simulate_1_reg_pc_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_rst_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="pc_stop" SIGIS="undef" SIGNAME="nop_0_stop">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="nop_0" PORT="stop"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="pc_in" RIGHT="0" SIGIS="undef" SIGNAME="mux_2_8bits_0_mout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_2_8bits_0" PORT="mout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="start_signal" SIGIS="undef" SIGNAME="External_Ports_start_signal">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="start_signal"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="pc_out" RIGHT="0" SIGIS="undef" SIGNAME="reg_pc_0_pc_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mem_inst_0" PORT="pc_in"/>
+            <CONNECTION INSTANCE="adder_pc_0" PORT="pc_now"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="start_signal_out" SIGIS="undef" SIGNAME="reg_pc_0_start_signal_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_D_0" PORT="start_signal_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/regfile_0" HWVERSION="1.0" INSTANCE="regfile_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="regfile" VLNV="xilinx.com:user:regfile:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="simulate_1_regfile_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_rst_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RegWrite" SIGIS="undef" SIGNAME="reg_Control_W_0_RegWrite">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_W_0" PORT="RegWrite"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="rs1" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_D_0_rs1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_D_0" PORT="rs1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="rs2" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_D_0_rs2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_D_0" PORT="rs2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="rd" RIGHT="0" SIGIS="undef" SIGNAME="reg_Control_W_0_rd">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_Control_W_0" PORT="rd"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="Write_data" RIGHT="0" SIGIS="undef" SIGNAME="reg_W_0_WriteBackData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="reg_W_0" PORT="WriteBackData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="r1_out" RIGHT="0" SIGIS="undef" SIGNAME="regfile_0_r1_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_2_0" PORT="s1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="r2_out" RIGHT="0" SIGIS="undef" SIGNAME="regfile_0_r2_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_2_1" PORT="s1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

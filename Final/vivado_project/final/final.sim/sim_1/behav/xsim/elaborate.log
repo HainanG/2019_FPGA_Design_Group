@@ -1,0 +1,62 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 86999292d1354ef6844375223107f77e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_v3_behav xil_defaultlib.testbench_v3 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/FPGALAB/final_v4/final/final.ip_user_files/bd/simulate_1/ipshared/019a/src/alu.v" Line 1. Module ALU(_lui='b0110111,_auipc='b010111,_jal='b01101111,_jalr='b01100111,_B='b01100011,_L='b011,_S='b0100011,_AI='b010011,_AR='b0110011,_add='b0,_sll='b01,_slt='b010,_sltu='b011,_xor='b0100,_srl='b0101,_or='b0110,_and='b0111,_beq='b0,_bne='b01,_blt='b0100,_bge='b0101,_bltu='b0110,_bgeu='b0111) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALU(_lui='b0110111,_auipc='b0101...
+Compiling module xil_defaultlib.simulate_1_ALU_0_0
+Compiling module xil_defaultlib.adder_pc
+Compiling module xil_defaultlib.simulate_1_adder_pc_0_0
+Compiling module xil_defaultlib.imme_ext(_lui='b0110111,_auipc='...
+Compiling module xil_defaultlib.simulate_1_imme_ext_0_0
+Compiling module xil_defaultlib.jump_pc(_jal='b01101111,_jalr='b...
+Compiling module xil_defaultlib.simulate_1_jump_pc_0_0
+Compiling module xil_defaultlib.mem_data(_byte='b0,_halfword='b0...
+Compiling module xil_defaultlib.simulate_1_mem_data_0_0
+Compiling module xil_defaultlib.mem_inst
+Compiling module xil_defaultlib.simulate_1_mem_inst_0_0
+Compiling module xil_defaultlib.memory_ctrl
+Compiling module xil_defaultlib.simulate_1_memory_ctrl_0_0
+Compiling module xil_defaultlib.simulate_1_memory_ctrl_1_0
+Compiling module xil_defaultlib.mux_2
+Compiling module xil_defaultlib.simulate_1_mux_2_0_0
+Compiling module xil_defaultlib.simulate_1_mux_2_1_0
+Compiling module xil_defaultlib.simulate_1_mux_2_2_0
+Compiling module xil_defaultlib.simulate_1_mux_2_3_0
+Compiling module xil_defaultlib.mux_2_8bits
+Compiling module xil_defaultlib.simulate_1_mux_2_8bits_0_0
+Compiling module xil_defaultlib.mux_4
+Compiling module xil_defaultlib.simulate_1_mux_4_0_0
+Compiling module xil_defaultlib.simulate_1_mux_4_1_0
+Compiling module xil_defaultlib.simulate_1_mux_4_2_0
+Compiling module xil_defaultlib.simulate_1_mux_4_3_0
+Compiling module xil_defaultlib.nop(_jal='b01101111,_jalr='b0110...
+Compiling module xil_defaultlib.simulate_1_nop_0_0
+Compiling module xil_defaultlib.reg_Control_D(_jalr='b01100111,_...
+Compiling module xil_defaultlib.simulate_1_reg_Control_D_0_0
+Compiling module xil_defaultlib.reg_Control_E(_auipc='b010111,_j...
+Compiling module xil_defaultlib.simulate_1_reg_Control_E_0_0
+Compiling module xil_defaultlib.reg_Control_M(_L='b011,_S='b0100...
+Compiling module xil_defaultlib.simulate_1_reg_Control_M_0_0
+Compiling module xil_defaultlib.reg_Control_W(_B='b01100011,_S='...
+Compiling module xil_defaultlib.simulate_1_reg_Control_W_0_0
+Compiling module xil_defaultlib.reg_E
+Compiling module xil_defaultlib.simulate_1_reg_E_0_0
+Compiling module xil_defaultlib.reg_M
+Compiling module xil_defaultlib.simulate_1_reg_M_0_0
+Compiling module xil_defaultlib.reg_W
+Compiling module xil_defaultlib.simulate_1_reg_W_0_0
+Compiling module xil_defaultlib.reg_pc
+Compiling module xil_defaultlib.simulate_1_reg_pc_0_0
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.simulate_1_regfile_0_0
+Compiling module xil_defaultlib.simulate_1
+Compiling module xil_defaultlib.simulate_1_wrapper
+Compiling module xil_defaultlib.testbench_v3
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_v3_behav

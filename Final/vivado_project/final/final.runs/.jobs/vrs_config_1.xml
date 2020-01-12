@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_1_reg_Control_E_0_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_reg_Control_E_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_nop_0_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_nop_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_reg_Control_M_0_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_reg_Control_M_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_reg_Control_D_0_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_reg_Control_D_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_mux_2_0_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_mux_2_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_mux_2_8bits_0_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_mux_2_8bits_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_imme_ext_0_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_imme_ext_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_reg_Control_W_0_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_reg_Control_W_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_ALU_0_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_ALU_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_processing_system7_0_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_reg_E_0_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_reg_E_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_start_signal_0_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_start_signal_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_mux_4_1_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_mux_4_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_mux_4_2_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_mux_4_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_mux_4_1_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_mem_ctrl_0_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_mem_ctrl_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_adder_pc_0_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_adder_pc_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_mem_ctrl_1_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_mem_ctrl_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_mem_ctrl_0_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_mem_data_0_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_mem_data_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_mux_2_1_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_mux_2_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_mux_2_0_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_regfile_0_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_regfile_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_reg_pc_0_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_reg_pc_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_mux_2_2_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_mux_2_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_mux_2_0_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_mem_inst_0_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_mem_inst_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_jump_pc_0_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_jump_pc_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_reg_M_0_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_reg_M_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_reg_W_0_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_reg_W_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_mux_4_0_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_mux_4_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_mux_4_1_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_xbar_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_mux_2_3_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_mux_2_3_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_mux_2_0_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_auto_pc_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_mux_4_3_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_mux_4_3_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_mux_4_1_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_rst_ps7_0_100M_0_synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/design_1_rst_ps7_0_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/FPGALAB/final_v4/final/final.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="design_1_reg_Control_E_0_0_synth_1"/>
+		<Parent Id="design_1_nop_0_0_synth_1"/>
+		<Parent Id="design_1_reg_Control_M_0_0_synth_1"/>
+		<Parent Id="design_1_reg_Control_D_0_0_synth_1"/>
+		<Parent Id="design_1_mux_2_0_0_synth_1"/>
+		<Parent Id="design_1_mux_2_8bits_0_0_synth_1"/>
+		<Parent Id="design_1_imme_ext_0_0_synth_1"/>
+		<Parent Id="design_1_reg_Control_W_0_0_synth_1"/>
+		<Parent Id="design_1_ALU_0_0_synth_1"/>
+		<Parent Id="design_1_processing_system7_0_0_synth_1"/>
+		<Parent Id="design_1_reg_E_0_0_synth_1"/>
+		<Parent Id="design_1_start_signal_0_0_synth_1"/>
+		<Parent Id="design_1_mux_4_1_0_synth_1"/>
+		<Parent Id="design_1_mux_4_2_0_synth_1"/>
+		<Parent Id="design_1_mem_ctrl_0_0_synth_1"/>
+		<Parent Id="design_1_adder_pc_0_0_synth_1"/>
+		<Parent Id="design_1_mem_ctrl_1_0_synth_1"/>
+		<Parent Id="design_1_mem_data_0_0_synth_1"/>
+		<Parent Id="design_1_mux_2_1_0_synth_1"/>
+		<Parent Id="design_1_regfile_0_0_synth_1"/>
+		<Parent Id="design_1_reg_pc_0_0_synth_1"/>
+		<Parent Id="design_1_mux_2_2_0_synth_1"/>
+		<Parent Id="design_1_mem_inst_0_0_synth_1"/>
+		<Parent Id="design_1_jump_pc_0_0_synth_1"/>
+		<Parent Id="design_1_reg_M_0_0_synth_1"/>
+		<Parent Id="design_1_reg_W_0_0_synth_1"/>
+		<Parent Id="design_1_mux_4_0_0_synth_1"/>
+		<Parent Id="design_1_xbar_0_synth_1"/>
+		<Parent Id="design_1_mux_2_3_0_synth_1"/>
+		<Parent Id="design_1_auto_pc_0_synth_1"/>
+		<Parent Id="design_1_mux_4_3_0_synth_1"/>
+		<Parent Id="design_1_rst_ps7_0_100M_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+
