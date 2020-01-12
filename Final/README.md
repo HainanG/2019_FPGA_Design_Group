@@ -14,7 +14,7 @@
 * bitstream可以產生 但是不知為啥bsp裡的driver有少 沒辦法測試...  
 ### testbench 解說  
 (以下以10進位表達, vivado波型圖為16進位)  
-#### testbench_v1 :  
+#### testbench_v1 : (測試資料相依)  
   
 1 : addi x2 x0 5  
 2 : addi x3 x2 6  
@@ -46,7 +46,7 @@ mem_data[28:31] = 100 => 00000064 (16進位)
 
   
   
-#### testbench_v2 :  
+#### testbench_v2 : (測試L指令造成的stop)  
   
 1 : addi x2 x0 3  
 2 : S x2 x0 0  
@@ -64,7 +64,7 @@ mem_data[0:3] = 00000003
 
   
   
-#### testbench_v3 :  
+#### testbench_v3 : (測試其他指令是否正常運作)  
   
 1 : addi x2 x0 5  
 2 : SLTI x3 x2 6  
